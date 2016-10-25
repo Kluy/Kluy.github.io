@@ -1,0 +1,53 @@
+h1{
+  font-family: arial;
+  text-align: center;
+  font-size: 36px;
+
+  margin-bottom: 30px;
+  margin-left: 8px;
+}
+h2{
+  font-size: 18px;
+}
+.all{height: 1024px;
+width: 1024px;
+background: #f7f1f5;
+padding-top: 24px;
+}
+.foto{
+  margin-left: 150px;
+  background-color: #0056d3;
+  height: 200px;
+  width: 200px;
+}
+.profession{
+  line-height: 57px;
+}
+.text{
+  width: 500px;
+  font-family: Myriad Pro;
+  margin-left: 263px;
+  font-size: 14px;
+}
+.why{
+  border-top: 1px solid #8f8f8f;
+  border-bottom: 1px solid #8f8f8f;
+}
+img{
+  border: 1px solid #8f8f8f;
+  width: 200px;
+  height: 200px;
+}
+p{
+    font-size: 14px;
+    margin-left: 40px;
+}
+ul{
+  font-size: 14px;
+}
+a{
+  font-style: italic;
+}
+.feedback{
+  border-top: 1px solid #8f8f8f;
+}
