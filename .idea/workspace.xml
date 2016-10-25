@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6e80b0b-7620-4adc-8b27-7a4f8bb28a3e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lesson3bonus/background.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lesson3bonus/index.html" afterPath="$PROJECT_DIR$/lesson3bonus/index.html" />
     </list>
     <ignored path="Kluy.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -245,12 +242,20 @@
       <option name="presentableId" value="Default" />
       <updated>1477392049816</updated>
       <workItem from="1477392050976" duration="574000" />
-      <workItem from="1477399171451" duration="1116000" />
+      <workItem from="1477399171451" duration="1164000" />
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1477400953497</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1477400953497</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2550000" />
+    <option name="totallyTimeSpent" value="2598000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
@@ -285,6 +290,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
