@@ -20,7 +20,36 @@ body{
     background-position: 25px 100%;
     background-color: white;
     height: 175px;
-
+}
+.slogan{
+    font-size: 12px;
+    color: #128aa7;
+    padding-top: 110px;
+    padding-left: 95px;
+    float: left;
+}
+.images{
+    float: right;
+    padding-right: 33px;
+}
+.contacts{
+    font-size: 12px;
+    color: #128aa7;
+    line-height: 18px;
+    margin-bottom: 32px;
+    padding-top: 7px;
+    margin-left: 214px;
+}
+.countries{
+    padding-bottom: 6px;
+}
+.countries li{
+    display: inline-block;
+    font-size: 10px;
+    color: #128aa7;
+    text-decoration: underline;
+    text-align: center;
+    width: 53px;
 }
 
 /*CONTENT*/
@@ -30,35 +59,96 @@ body{
     clear: both;
     display: block;
 }
+.content{
+    position: relative;
+}
 .foto{
     border-top: 1px solid #128aa7;
+}
+.menu{
+    width: 1000px;
+    background-color: #323232;
+    font-size: 14px;
+    border-top: 1px solid #cacbcb;
+    border-bottom: 1px solid black;
+    box-shadow: 0 3px 10px;
+    position: absolute;
+}
+.menu>li{
+    display: inline-block;
+    line-height: 28px;
+    padding-left: 60px;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+.triangle{
+    padding-left: 2px;
+}
+.submenu{
+    width: 135px;
+    display: none;
+    position: absolute;
+    top: 29px;
+    line-height: 24px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.submenu li{
+    display: block;
+}
+.menu li:hover ul{
+    background-color: #323232;
+    display: block;
 }
 .name{
     font-size: 14pt;
     text-align: center;
+    line-height: 35px;
+    padding-top: 6px;
 }
 .content{
     color: #424c43;
+    overflow: hidden;
+}
+.columns{
+    padding-top: 29px;
 }
 .info{
-    width: 208px;
+    width: 170px;
     float: left;
     background-color: #edeef0;
     border-left: 1px solid #c7cacf;
     border-right: 1px solid #c7cacf;
+    font-size: 14px;
+    line-height: 25px;
+    padding: 0 25px 15px 15px;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
 }
-.text{
-    width: 580px;
+.text {
+    width: 537px;
     float: left;
     background-color: white;
     margin: 0 auto;
+    font-size: 14px;
+    line-height: 25px;
+    padding: 0 25px 15px 15px;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
 }
 .news{
-    width: 208px;
+    width: 170px;
     float: right;
     background-color: #edeef0;
     border-left: 1px solid #c7cacf;
     border-right: 1px solid #c7cacf;
+    font-size: 14px;
+    line-height: 25px;
+    padding: 0 25px 15px 15px;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
 }
 
 /*FOOTER*/
