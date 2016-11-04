@@ -17,7 +17,6 @@ body{
     text-align: right;
     padding-right: 20px;
     font-size: 14px;
-
 }
 .flag{
     vertical-align: middle;
@@ -33,14 +32,10 @@ a{
 li{
     display: inline-block;
 }
-li:nth-child(5) a{
-    margin-right: -5px;
-}
-li:nth-child(6) a{
+li:nth-child(6){
     color: white;
-    margin-right: -4px;
-    padding: 0;
-    padding-right: 12px;
+    padding: 0 14px;
+    border-left: 1px solid #56a2dc;
 }
 li:last-child{
     background-image: url(../img/menu_button.png);
@@ -70,10 +65,9 @@ li:last-child a:hover{
 
 .form{
     width: 560px;
-    margin: 8% auto;
+    margin: 7% auto;
     text-align: center;
     display: block;
-
 }
 .top{
     background-color: rgba(0, 0, 0, 0.5);
@@ -136,10 +130,9 @@ input[type="submit"]{
     background-repeat: no-repeat;
     background-color: transparent;
     border: 0;
-    padding: 0;
-    padding-right: 10px;
+    padding: 0 10px 0 6px;
     margin: 20px 0;
-    width: 161px;
+    width: 151px;
     font-size: 14px;
     line-height: 37px;
     color: white;
