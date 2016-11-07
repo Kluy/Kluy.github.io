@@ -93,9 +93,23 @@ body{
 .submenu li{
     display: block;
 }
-.menu li:hover ul{
+.submenu2{
+    width: 135px;
+    display: none;
+    position: absolute;
+    line-height: 24px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    left: 135px;
+    margin-top: -24px;
+}
+.menu li:hover .submenu{
     background-color: #323232;
     display: block;
+}
+.submenu li:hover ul{
+    display: block;
+    background-color: #323232;
 }
 .name{
     font-size: 14pt;
