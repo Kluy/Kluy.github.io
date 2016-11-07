@@ -54,11 +54,6 @@ body{
 
 /*CONTENT*/
 
-.clearfix:after{
-    content: '';
-    clear: both;
-    display: block;
-}
 .content{
     position: relative;
 }
