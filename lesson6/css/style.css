@@ -13,9 +13,9 @@ a{
     font-family: Arial, sans-serif;
 }
 .phone_box{
-
+    padding-left: 7px;
 }
-.floating_box{
+.float{
     display: inline-block;
 }
 .phone_img{
@@ -35,22 +35,31 @@ a{
     color: #5e696d;
     font-size: 18px;
 }
-.login{
-    background: -moz-linear-gradient(90deg, rgba(12,51,87,1) 0%, rgba(35,105,136,1) 100%); /* ff3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(35,105,136,1)), color-stop(100%, rgba(12,51,87,1))); /* safari4+,chrome */
-    background: -webkit-linear-gradient(90deg, rgba(12,51,87,1) 0%, rgba(35,105,136,1) 100%); /* safari5.1+,chrome10+ */
-    background: -o-linear-gradient(90deg, rgba(12,51,87,1) 0%, rgba(35,105,136,1) 100%); /* opera 11.10+ */
-    background: -ms-linear-gradient(90deg, rgba(12,51,87,1) 0%, rgba(35,105,136,1) 100%); /* ie10+ */
-    background: linear-gradient(0deg, rgba(12,51,87,1) 0%, rgba(35,105,136,1) 100%); /* w3c */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#236988', endColorstr='#0c3357',GradientType=0 ); /* ie6-9 */
+.avt{
+    background: -moz-linear-gradient(270deg, rgba(31,103,135,1) 0%, rgba(12,51,87,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(31,103,135,1)), color-stop(100%, rgba(12,51,87,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(270deg, rgba(31,103,135,1) 0%, rgba(12,51,87,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(270deg, rgba(31,103,135,1) 0%, rgba(12,51,87,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(270deg, rgba(31,103,135,1) 0%, rgba(12,51,87,1) 100%); /* ie10+ */
+    background: linear-gradient(180deg, rgba(31,103,135,1) 0%, rgba(12,51,87,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6787', endColorstr='#0c3357',GradientType=0 ); /* ie6-9 */
     border-radius: 5px;
     padding-top: 3px;
     padding-bottom: 4px;
     padding-left: 8px;
     padding-right: 10px;
+    margin-left: 13px;
+    margin-right: 17px;
+    box-shadow: 3px 3px 3px #969696;
 }
 .man{
     vertical-align: middle;
+}
+input[type="text"]{
+    width: 150px;
+}
+input[type="password"]{
+    width: 150px;
 }
 input[type="submit"]{
     background-color: transparent;
@@ -63,12 +72,20 @@ input[type="submit"]{
     border-left: 1px solid;
     padding-left: 5px;
     padding-right: 19px;
-    margin-left: -4px;
+    margin-left: -5px;
 }
 .forget_password{
     font-size: 12px;
     color: #bfbfbf;
     text-decoration: underline;
+}
+.navigation{
+    border: 1px solid #c1c8cb;
+    border-radius: 20px;
+    padding: 0 10px 4px 10px;
+}
+.map{
+    padding: 0 5px;
 }
 
 /* SIDEBAR */
