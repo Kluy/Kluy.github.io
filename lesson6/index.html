@@ -160,14 +160,14 @@
         <h4 class="tires_search_titel">Поиск шин</h4>
         <form action="#" method="get">
             <p class="drop_list inline">Размер:</p>
-            <select class="size inline" name="Размер" id="size">
+            <select class="size_drop_list inline" name="Размер" id="size">
                 <option value="145">145</option>
                 <option value="150">150</option>
                 <option value="155">155</option>
                 <option value="160">160</option>
             </select>
             <p class="drop_list slash inline">/</p>
-            <select class="size inline" name="Размер_2" id="size_2">
+            <select class="size_drop_list inline" name="Размер_2" id="size_2">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -182,64 +182,66 @@
             </select>
             <div>
                 <p class="drop_list season inline">Сезон:</p>
-                <div class="inline">
-                    <p class="brend">
-                        <input type="checkbox" name="tires" id="summer">
-                        <label for="summer">лето</label>
+                <div class="check_season inline">
+                    <p class="summer">
+                        <input class="seasons" type="checkbox" name="tires" id="summer">
+                        <label class="label_seasons" for="summer">лето</label>
                     </p>
-                    <p class="brend">
-                        <input type="checkbox" name="tires" id="winter">
-                        <label for="winter">зима</label>
+                    <p class="summer">
+                        <input class="seasons" type="checkbox" name="tires" id="winter">
+                        <label class="label_seasons" for="winter">зима</label>
                     </p>
-                    <p class="brend bottom">
-                        <input type="checkbox" name="tires" id="all">
-                        <label for="all">всесез</label>
+                    <p class="summer">
+                        <input class="seasons" type="checkbox" name="tires" id="all">
+                        <label class="label_seasons" for="all">всесез</label>
                     </p>
                 </div>
             </div>
-            <input class="search_button tires_search_buuton" type="submit" value="поиск...">
+            <input class="search_button tires_search_button" type="submit" value="поиск...">
         </form>
     </section>
     <section class="search_boxes disks_search inline">
         <form action="#" method="get">
             <div class="disks_search_left_side inline">
                 <h4 class="disks_search_titel">Поиск дисков</h4>
+                <div class="disks_search_box">
                     <div class="drop_list disk_diameter inline">
-                        <p class="inline">Диаметр</p>
-                        <p class="line2 inline">диска:</p>
+                            <p class="inline">Диаметр</p>
+                            <p class="line2 inline">диска:</p>
+                        </div>
+                        <select class="select_box_size inline" name="Диаметр диска" id="disk_diameter">
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                        </select>
+                    <div>
+                        <div class="drop_list inline">
+                            <p>Количество</p>
+                            <p class="line2">крепежных</p>
+                            <p class="line2">отверстий:</p>
+                        </div>
+                        <select class="fasten inline" name="Крепежные отверстия" id="fasten">
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                        </div>
+                    <div>
+                        <div class="drop_list inline">
+                            <p>Диаметр</p>
+                            <p class="line2">расположения</p>
+                            <p class="line2">крепежных</p>
+                            <p class="line2">отверстий:</p>
+                        </div>
+                        <select class="select_box_size diameter inline" name="Диаметр расположения" id="diameter">
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                        </select>
                     </div>
-                    <select class="select_box_size inline" name="Диаметр диска" id="disk_diameter">
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                    </select>
-                <div>
-                    <div class="drop_list inline">
-                        <p>Количество</p>
-                        <p class="line2">крепежных</p>
-                        <p class="line2">отверстий:</p>
-                    </div>
-                    <select class="fasten inline" name="Крепежные отверстия" id="fasten">
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                    </select>
-                    </div>
-                <div>
-                    <div class="drop_list inline">
-                        <p>Диаметр</p>
-                        <p class="line2">расположения</p>
-                        <p class="line2">крепежных</p>
-                        <p class="line2">отверстий:</p>
-                    </div>
-                    <select class="select_box_size diameter inline" name="Диаметр расположения" id="diameter">
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                    </select>
                 </div>
             </div>
             <div class="disks_search_right_side inline">
@@ -278,7 +280,7 @@
             <h3 class="titel inline">Каталог продукции:</h3>
         </div>
         <div class="list_titel_bar">
-            <p class="list_titel inline">Шины</p>
+            <h4 class="list_titel inline">Шины</h4>
         </div>
             <ul>
                 <li><a href="#">Наименование 1</a></li>
@@ -287,7 +289,7 @@
                 <li><a href="#">Наименование 4</a></li>
             </ul>
         <div class="list_titel_bar">
-            <p class="list_titel inline">Диски</p>
+            <h4 class="list_titel inline">Диски</h4>
         </div>
             <ul>
                 <li><a href="#">Наименование 1</a></li>
@@ -296,7 +298,7 @@
                 <li><a href="#">Наименование 4</a></li>
             </ul>
         <div class="list_titel_bar">
-            <p class="list_titel inline">Болты</p>
+            <h4 class="list_titel inline">Болты</h4>
         </div>
             <ul>
                 <li><a href="#">Наименование 1</a></li>
@@ -319,15 +321,15 @@
                 </div>
                 <p class="brend">
                     <input type="checkbox" name="tires" id="brend_1">
-                        <label for="brend_1">Бренд 1</label>
+                    <label for="brend_1">Бренд 1</label>
                 </p>
                 <p class="brend">
                     <input type="checkbox" name="tires" id="brend_2">
-                        <label for="brend_2">Бренд 2</label>
+                    <label for="brend_2">Бренд 2</label>
                 </p>
                 <p class="brend bottom">
                     <input type="checkbox" name="tires" id="brend_3">
-                        <label for="brend_3">Бренд 3</label>
+                    <label for="brend_3">Бренд 3</label>
                 </p>
                 <div class="list_titel_bar">
                     <p class="list_titel inline">Диски</p>
@@ -350,7 +352,7 @@
     </aside>
     <div class="content">
         <main>
-            <div class="inline">
+            <div class="goodyear inline">
                 <p class="name">Goodyear</p>
                 <p class="spec">Ultra Grip Extreme</p>
                 <div class="tires">
@@ -358,10 +360,10 @@
                 </div>
                 <p class="price_list">90.00 грн.</p>
             </div>
-            <div class="inline">
+            <div class="nokian inline">
                 <p class="name">Nokian</p>
                 <p class="spec">Hakkapeliitta R</p>
-                <div class="tires nokian">
+                <div class="tires">
                     <img src="img/nokian.jpg" alt="tire">
                 </div>
                 <p class="price_list">115.00 грн.</p>
@@ -374,7 +376,7 @@
                 </div>
                 <p class="price_list">393.00 грн.</p>
             </div>
-            <div class="inline">
+            <div class="goodyear inline">
                 <p class="name">Goodyear</p>
                 <p class="spec">Ultra Grip Extreme</p>
                 <div class="tires">
@@ -382,13 +384,21 @@
                 </div>
                 <p class="price_list">90.00 грн.</p>
             </div>
-            <div class="inline">
+            <div class="nokian inline">
                 <p class="name">Nokian</p>
                 <p class="spec">Hakkapeliitta R</p>
-                <div class="tires nokian">
+                <div class="tires">
                     <img src="img/nokian.jpg" alt="tire">
                 </div>
                 <p class="price_list">115.00 грн.</p>
+            </div>
+            <div class="goodyear inline">
+                <p class="name">Goodyear</p>
+                <p class="spec">Ultra Grip Extreme</p>
+                <div class="tires">
+                    <img src="img/goodyear.jpg" alt="tire">
+                </div>
+                <p class="price_list">90.00 грн.</p>
             </div>
             <div class="inline">
                 <p class="name">Hankook</p>
@@ -398,18 +408,10 @@
                 </div>
                 <p class="price_list">393.00 грн.</p>
             </div>
-            <div class="inline">
-                <p class="name">Goodyear</p>
-                <p class="spec">Ultra Grip Extreme</p>
-                <div class="tires">
-                    <img src="img/goodyear.jpg" alt="tire">
-                </div>
-                <p class="price_list">90.00 грн.</p>
-            </div>
-            <div class="inline">
+            <div class="inline nokian">
                 <p class="name">Nokian</p>
                 <p class="spec">Hakkapeliitta R</p>
-                <div class="tires nokian">
+                <div class="tires">
                     <img src="img/nokian.jpg" alt="tire">
                 </div>
                 <p class="price_list">115.00 грн.</p>

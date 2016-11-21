@@ -23,7 +23,7 @@ a{
     width: 909px;
     padding: 18px 46px 0 46px;
     margin: 0 auto;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Tahoma, sans-serif;
 }
 .phone_box{
     padding-left: 7px;
@@ -184,6 +184,7 @@ input[type="submit"]{
     position: relative;
     font-size: 12px;
     color: #154467;
+    vertical-align: top;
 }
 .search_by_car{
     width: 381px;
@@ -205,11 +206,12 @@ input[type="submit"]{
     font-size: 10px;
     font-weight: 900;
     color: #154468;
-    margin-left: 110px;
+    margin-left: 138px;
 }
 .drop_list{
     font-size: 9px;
     color: black;
+
 }
 .line2{
     color: #77858b;
@@ -221,6 +223,7 @@ input[type="submit"]{
 }
 .mark{
     margin-right: 11px;
+    margin-top: 12px;
 }
 .model, .year{
     margin-right: 9px;
@@ -229,7 +232,10 @@ input[type="submit"]{
     width: 50px;
 }
 select{
-    width: 90px;
+    width: 100px;
+    height: 17px;
+    font-size: 11px;
+    box-shadow: inset 1px 1px 1px;
 }
 .complectation{
     margin-top: 9px;
@@ -243,29 +249,22 @@ select{
 }
 .tires_search{
     width: 167px;
-    padding: 6px 14px 10px 10px;
+    padding: 4px 14px 8px 10px;
     margin-right: 5px;
+    height: 121px;
+
 }
-.disks_search{
-    width: 238px;
-    padding: 6px 17px 10px 10px;
-}
+
 .tires_search_titel{
     text-transform: uppercase;
     margin-bottom: 11px;
     font-weight: 900;
     font-size: 10px;
 }
-.disks_search_titel{
-    text-transform: uppercase;
-    font-weight: 900;
-    margin-bottom: 7px;
-    font-size: 10px;
-}
 .slash{
    font-size: 14px;
 }
-.size{
+.size_drop_list{
     width: 55px;
 }
 .radius {
@@ -277,37 +276,80 @@ select{
     width: 46px;
 }
 .season{
-    margin-top: 5px;
     vertical-align: top;
 }
-.search_button[type="submit"]{
-    font-style: italic;
-    font-size: 14px;
-    color: #154467;
-    background: none;
+.check_season{
     margin-top: 4px;
-    border-bottom: 2px solid #99a6b3;
-    padding: 0;
 }
-.search_by_car_button[type="submit"]{
-    margin-left: 295px;
+.summer{
+    font-size: 12px;
+    color: black;
 }
-.tires_search_buuton[type="submit"]{
-    margin-left: 110px;
+.seasons[type="checkbox"]:not(:checked),
+.seasons[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
 }
-.disks_search_button[type="submit"]{
-    margin-left: 190px;
+.seasons[type="checkbox"]:not(:checked) + .label_seasons,
+.seasons[type="checkbox"]:checked + .label_seasons {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+.seasons[type="checkbox"]:not(:checked) + .label_seasons:before,
+.seasons[type="checkbox"]:checked + .label_seasons:before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 4px;
+    width: 9px;
+    height: 9px;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #f8f8f8;
+    border-right: 1px solid #f8f8f8;
+    border-left: 1px solid #9d9d9d;
+    background: #fff;
+    box-shadow: inset 1px 1px 1px #bcbcbc;
+}
+.seasons[type="checkbox"]:not(:checked) + .label_seasons:after,
+.seasons[type="checkbox"]:checked + .label_seasons:after {
+    content: '˅';
+    position: absolute;
+    top: 3px; left: 4px;
+    font-size: 18px;
+    line-height: 0.8;
+    transition: all .2s;
+}
+.seasons[type="checkbox"]:not(:checked) + .label_seasons:after {
+    opacity: 0;
+    transform: scale(0);
+}
+.seasons[type="checkbox"]:checked + .label_seasons:after {
+    opacity: 1;
+    transform: scale(1);
+}
+.disks_search{
+    width: 238px;
+    padding: 3px 17px 8px 10px;
+}
+.disks_search_titel{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 10px;
 }
 .disks_search_left_side{
     border-right: 1px solid #bdc6ca;
     padding-right: 12px;
 }
+.disks_search_box{
+    margin-left: 5px;
+}
 .disks_search_right_side{
     margin-left: 10px;
-    vertical-align: 6px;
 }
 .disk_diameter{
     margin-bottom: 6px;
+    margin-top: 11px;
 }
 .select_box_size{
     width: 57px;
@@ -323,7 +365,25 @@ select{
 .dco{
     margin-bottom: 4px;
 }
-
+.search_button[type="submit"]{
+    font-style: italic;
+    font-size: 14px;
+    color: #154467;
+    background: none;
+    border-bottom: 2px solid #99a6b3;
+    padding: 0;
+}
+.search_by_car_button[type="submit"]{
+    margin-left: 325px;
+    margin-top: 7px;
+}
+.tires_search_button[type="submit"]{
+    margin-left: 112px;
+    margin-top: 3px;
+}
+.disks_search_button[type="submit"]{
+    margin-left: 188px;
+}
 
 
 /* SIDEBAR */
@@ -332,7 +392,7 @@ select{
 
 .sidebar_left{
     float: left;
-    margin-top: 19px;
+    margin-top: 18px;
 }
 .head{
     font-size: 13px;
@@ -342,7 +402,7 @@ select{
     padding: 2px 0 2px 2px;
     box-shadow: 2px 2px 3px #bfbfbf;
     margin-bottom: 13px;
-    width: 180px;
+    width: 178px;
 }
 .circle{
     width: 21px;
@@ -379,7 +439,7 @@ select{
     padding: 2px 0 1px 4px;
     position: relative;
     width: 144px;
-    height: 21px;
+    height: 23px;
 }
 .list_titel{
     position: absolute;
@@ -394,7 +454,7 @@ select{
     border-radius: 100%;
     position: absolute;
     top: -4px;
-    left: -24px;
+    left: -23px;
 }
 .sidebar_left ul{
     padding-left: 44px;
@@ -442,7 +502,7 @@ select{
 
 .sidebar_right{
     float: right;
-    margin-top: 19px;
+    margin-top: 16px;
 }
 .list{
     position: absolute;
@@ -460,9 +520,10 @@ select{
     color: #465961;
     padding-left: 7px;
     margin-top: 6px;
+    line-height: 20px;
 }
 .bottom{
-    margin-bottom: 12px;
+    margin-bottom: 7px;
 }
 .form{
     padding-left: 15px;
@@ -494,10 +555,46 @@ select{
     background: linear-gradient(180deg, rgba(12,51,87,1) 0%, rgba(31,103,135,1) 100%); /* w3c */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c3357', endColorstr='#1f6787',GradientType=0 ); /* ie6-9 */
 }
-input[type="checkbox"]{
-
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
 }
-
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 7px;
+    height: 7px;
+    border: 1px solid #1c4360;
+    background: #fff;
+    box-shadow: inset 1px 1px 3px, -1px 0 1px;
+}
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+    content: '˅';
+    position: absolute;
+    top: 3px; left: 4px;
+    font-size: 18px;
+    line-height: 0.8;
+    transition: all .2s;
+}
+[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
 
 
 
@@ -513,12 +610,12 @@ main{
     background: -ms-linear-gradient(270deg, rgba(229,231,232,1) 0%, rgba(147,167,176,1) 100%); /* ie10+ */
     background: linear-gradient(180deg, rgba(229,231,232,1) 0%, rgba(147,167,176,1) 100%); /* w3c */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e7e8', endColorstr='#93a7b0',GradientType=0 ); /* ie6-9 */
-    width: 471px;
+    width: 503px;
     float: left;
-    margin: 15px 10px 38px 10px;
-    text-align: center;
-    padding: 16px 23px 0 23px;
+    margin: 15px 0 40px 10px;
     border-radius: 3px;
+    padding-top: 15px;
+    padding-left: 21px;
 }
 .tires{
     width: 137px;
@@ -527,23 +624,27 @@ main{
     border: 1px solid #b0b9bc;
     border-radius: 6px;
     padding-top: 4px;
+    text-align: center;
 }
 .nokian{
-    margin: 0 13px;
+    padding-left: 25px;
+    padding-right: 24px;
 }
 .brand_logo{
     clear: both;
     text-align: center;
     margin-top: 38px;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
 }
 .name{
     font-size: 15px;
     color: #206988;
+    text-align: center;
     font-family: 'lucida_sans_unicoderegular', Arial, sans-serif;
 }
 .spec{
     font-size: 13px;
+    text-align: center;
     font-family: 'lucida_sans_unicoderegular', Arial, sans-serif;
 }
 .price_list{
@@ -552,7 +653,8 @@ main{
     font-style: italic;
     font-weight: bold;
     margin-top: 4px;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
+    text-align: center;
 }
 
 
@@ -570,7 +672,7 @@ footer {
     text-align: center;
 }
 .footer_menu{
-    padding-top: 12px;
+    padding-top: 9px;
     padding-bottom: 16px;
 }
 .footer_menu li{
