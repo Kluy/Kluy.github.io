@@ -188,7 +188,7 @@ input[type="submit"]{
 }
 .search_by_car{
     width: 381px;
-    padding: 2px 13px 8px 18px;
+    padding: 1px 13px 8px 18px;
     margin-left: 4px;
     margin-right: 11px;
 }
@@ -197,21 +197,25 @@ input[type="submit"]{
     left: 105px;
     font-weight: 900;
 }
+.search_by_car select{
+    margin-top: 4px;
+}
 .drop_list_group{
     font-size: 10px;
     font-weight: 900;
     color: #154468;
+    margin-bottom: 2px;
 }
 .drop_list_group2{
     font-size: 10px;
     font-weight: 900;
     color: #154468;
     margin-left: 138px;
+    margin-bottom: 2px;
 }
 .drop_list{
     font-size: 9px;
     color: black;
-
 }
 .line2{
     color: #77858b;
@@ -229,14 +233,50 @@ input[type="submit"]{
     margin-right: 9px;
 }
 .year {
-    width: 50px;
+    width: 58px;
 }
+
+/*select custom*/
+
+
 select{
     width: 100px;
     height: 17px;
     font-size: 11px;
     box-shadow: inset 1px 1px 1px;
+    -webkit-appearance: none;
+    padding-left: 2px;
+
 }
+.select {
+    position: relative;
+    overflow: hidden;
+}
+.select__arrow {
+    position: absolute;
+    top: 9px;
+    right: 4px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-width: 7px 4px 0 4px;
+    border-style: solid;
+    border-color: #0b2e4f transparent transparent transparent;
+}
+.select__arrow_year{
+   right: 13px;
+}
+.select__arrow:before{
+    content: "";
+    border-left: 1px solid #bfbfbf;
+    margin-left: -8px;
+    padding-top: 9px;
+}
+
+
+/*--end select custom--*/
+
+
 .complectation{
     margin-top: 9px;
 }
@@ -252,9 +292,7 @@ select{
     padding: 4px 14px 8px 10px;
     margin-right: 5px;
     height: 121px;
-
 }
-
 .tires_search_titel{
     text-transform: uppercase;
     margin-bottom: 11px;
@@ -363,7 +401,7 @@ select{
     vertical-align: 9px;
 }
 .dco{
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 .search_button[type="submit"]{
     font-style: italic;
@@ -375,14 +413,15 @@ select{
 }
 .search_by_car_button[type="submit"]{
     margin-left: 325px;
-    margin-top: 7px;
+    margin-top: 1px;
 }
 .tires_search_button[type="submit"]{
     margin-left: 112px;
-    margin-top: 3px;
+    margin-top: 2px;
 }
 .disks_search_button[type="submit"]{
     margin-left: 188px;
+    margin-top: -1px;
 }
 
 
