@@ -123,7 +123,7 @@
                             <p class="line2 inline">авто:</p>
                         </div>
                         <div class="select inline">
-                            <select class="inline" name="Марка авто" id="mark_1">
+                            <select class="inline" name="Марка авто" id="mark_2">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -138,7 +138,7 @@
                             <p class="line2">автомобиля:</p>
                         </div>
                         <div class="select inline">
-                            <select class="inline" name="Модель автомобиля" id="model_1">
+                            <select class="inline" name="Модель автомобиля" id="model_2">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -153,7 +153,7 @@
                             <p class="line2">автомобиля:</p>
                         </div>
                         <div class="select inline">
-                            <select class="year inline" name="Год выпуска автомобиля" id="year_1">
+                            <select class="year inline" name="Год выпуска автомобиля" id="year_2">
                                 <option value="2001">2001</option>
                                 <option value="2002">2002</option>
                                 <option value="2003">2003</option>
@@ -167,7 +167,7 @@
                             <p>Комплектация:</p>
                         </div>
                         <div class="select inline">
-                            <select class="inline" name="Комплектация" id="complectation_1">
+                            <select class="inline" name="Комплектация" id="complectation_2">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -191,7 +191,7 @@
                     <option value="155">155</option>
                     <option value="160">160</option>
                 </select>
-                <div class="select__arrow"></div>
+                <div class="select__arrow select__arrow_size"></div>
             </div>
             <div class="select inline">
                 <p class="drop_list slash inline">/</p>
@@ -201,7 +201,7 @@
                     <option value="3">3</option>
                     <option value="4">4</option>
                 </select>
-                <div class="select__arrow"></div>
+                <div class="select__arrow select__arrow_size"></div>
             </div>
             <div class="select inline">
                 <p class="drop_list radius inline">R</p>
@@ -211,7 +211,7 @@
                     <option value="14">14</option>
                     <option value="15">15</option>
                 </select>
-            <div class="select__arrow"></div>
+                <div class="select__arrow select__arrow_r"></div>
             </div>
             <div>
                 <p class="drop_list season inline">Сезон:</p>
@@ -238,17 +238,18 @@
             <div class="disks_search_left_side inline">
                 <h4 class="disks_search_titel">Поиск дисков</h4>
                 <div class="disks_search_box">
-                    <div class="drop_list disk_diameter inline">
+                    <div class="select drop_list disk_diameter inline">
                             <p class="inline">Диаметр</p>
                             <p class="line2 inline">диска:</p>
-                        </div>
                         <select class="select_box_size inline" name="Диаметр диска" id="disk_diameter">
                             <option value="14">14</option>
                             <option value="15">15</option>
                             <option value="15">15</option>
                             <option value="16">16</option>
                         </select>
-                    <div>
+                    <div class="select__arrow select__arrow_size"></div>
+                    </div>
+                    <div class="select" >
                         <div class="drop_list inline">
                             <p>Количество</p>
                             <p class="line2">крепежных</p>
@@ -260,8 +261,9 @@
                             <option value="5">5</option>
                             <option value="6">6</option>
                         </select>
-                        </div>
-                    <div>
+                        <div class="select__arrow select__arrow_fasten"></div>
+                    </div>
+                    <div class="select">
                         <div class="drop_list inline">
                             <p>Диаметр</p>
                             <p class="line2">расположения</p>
@@ -274,6 +276,7 @@
                             <option value="14">14</option>
                             <option value="15">15</option>
                         </select>
+                        <div class="select__arrow select__arrow_diameter"></div>
                     </div>
                 </div>
             </div>
@@ -284,23 +287,29 @@
                     <p class="line2">центрального</p>
                     <p class="line2">отверстия:)</p>
                 </div>
-                <select class="select_box_size dco" name="ДЦО" id="DCO">
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                </select>
-                <div class="drop_list">
+                <div class="select">
+                    <select class="select_box_size dco" name="ДЦО" id="DCO">
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                    </select>
+                    <div class="select__arrow select__arrow_dco"></div>
+                </div>
+                <div class="drop_list et">
                     <p>ET</p>
                     <p class="line2">(вылет</p>
                     <p class="line2">диска:)</p>
                 </div>
-                <select class="select_box_size" name="ET" id="ET">
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                </select>
+                <div class="select">
+                    <select class="select_box_size" name="ET" id="ET">
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                    </select>
+                    <div class="select__arrow select__arrow_dco"></div>
+                </div>
             </div>
                 <input class="search_button disks_search_button" type="submit" value="поиск...">
         </form>

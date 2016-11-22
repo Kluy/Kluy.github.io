@@ -236,23 +236,23 @@ input[type="submit"]{
     width: 58px;
 }
 
-/*select custom*/
+/* custom select */
 
 
 select{
     width: 100px;
     height: 17px;
     font-size: 11px;
-    box-shadow: inset 1px 1px 1px;
+    box-shadow: inset 1px 1px 1px #b0b0b0;
     -webkit-appearance: none;
     padding-left: 2px;
 
 }
-.select {
+.select{
     position: relative;
     overflow: hidden;
 }
-.select__arrow {
+.select__arrow{
     position: absolute;
     top: 9px;
     right: 4px;
@@ -266,6 +266,22 @@ select{
 .select__arrow_year{
    right: 13px;
 }
+.select__arrow_size{
+    top: 5px;
+}
+.select__arrow_r{
+    top: 11px;
+}
+.select__arrow_fasten{
+    top: 18px;
+    left: 107px;
+}
+.select__arrow_diameter{
+    top: 24px;
+}
+.select__arrow_dco{
+    top: 5px;
+}
 .select__arrow:before{
     content: "";
     border-left: 1px solid #bfbfbf;
@@ -274,7 +290,7 @@ select{
 }
 
 
-/*--end select custom--*/
+/*--end custom select--*/
 
 
 .complectation{
@@ -289,13 +305,13 @@ select{
 }
 .tires_search{
     width: 167px;
-    padding: 4px 14px 8px 10px;
+    padding: 4px 12px 8px 12px;
     margin-right: 5px;
     height: 121px;
 }
 .tires_search_titel{
     text-transform: uppercase;
-    margin-bottom: 11px;
+    margin-bottom: 7px;
     font-weight: 900;
     font-size: 10px;
 }
@@ -314,14 +330,15 @@ select{
     width: 46px;
 }
 .season{
-    vertical-align: top;
+    vertical-align: 29px;
 }
 .check_season{
-    margin-top: 4px;
+    margin-top: 1px;
 }
 .summer{
     font-size: 12px;
     color: black;
+    margin-top: 2px;
 }
 .seasons[type="checkbox"]:not(:checked),
 .seasons[type="checkbox"]:checked {
@@ -386,8 +403,8 @@ select{
     margin-left: 10px;
 }
 .disk_diameter{
-    margin-bottom: 6px;
-    margin-top: 11px;
+    margin-bottom: 1px;
+    margin-top: 6px;
 }
 .select_box_size{
     width: 57px;
@@ -398,10 +415,10 @@ select{
 }
 .diameter{
     margin-left: 5px;
-    vertical-align: 9px;
+    vertical-align: 3px;
 }
-.dco{
-    margin-bottom: 6px;
+.et{
+    margin-top: 6px;
 }
 .search_button[type="submit"]{
     font-style: italic;
@@ -413,15 +430,13 @@ select{
 }
 .search_by_car_button[type="submit"]{
     margin-left: 325px;
-    margin-top: 1px;
+    margin-top: 2px;
 }
 .tires_search_button[type="submit"]{
-    margin-left: 112px;
-    margin-top: 2px;
+    margin-left: 111px;
 }
 .disks_search_button[type="submit"]{
     margin-left: 188px;
-    margin-top: -1px;
 }
 
 
