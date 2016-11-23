@@ -368,9 +368,9 @@ select{
 }
 .seasons[type="checkbox"]:not(:checked) + .label_seasons:after,
 .seasons[type="checkbox"]:checked + .label_seasons:after {
-    content: '˅';
+    content: '۷';
     position: absolute;
-    top: 3px; left: 4px;
+    top: 4px; left: 6px;
     font-size: 18px;
     line-height: 0.8;
     transition: all .2s;
@@ -634,7 +634,7 @@ select{
 }
 [type="checkbox"]:not(:checked) + label:after,
 [type="checkbox"]:checked + label:after {
-    content: '˅';
+    content: '۷';
     position: absolute;
     top: 3px; left: 4px;
     font-size: 18px;
@@ -680,9 +680,8 @@ main{
     padding-top: 4px;
     text-align: center;
 }
-.nokian{
-    padding-left: 25px;
-    padding-right: 24px;
+.tire_container{
+    margin-right: 25px;
 }
 .brand_logo{
     clear: both;
