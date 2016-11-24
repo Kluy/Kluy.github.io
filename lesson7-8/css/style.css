@@ -1,0 +1,88 @@
+body{
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+
+/*--HEADER--*/
+
+
+header{
+    background-image: url(../img/header.jpg);
+}
+
+main{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.slider{
+    width: 960px;
+    margin: 0 auto;
+    color: white;
+    position: relative;
+    padding-top: 85px;
+}
+.slider__box{
+    display: inline-block;
+    width: 500px;
+    margin-right: 130px;
+    vertical-align: 84px;
+}
+.slider__name{
+    font-size: 60px;
+}
+.slider__slogan{
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #edbfff;
+}
+.slider__images{
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+}
+
+
+/*--CONTENT--*/
+
+
+.blurbs{
+    background: -moz-linear-gradient(270deg, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(116,80,131,1)), color-stop(100%, rgba(50,37,57,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(270deg, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(270deg, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(270deg, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%); /* ie10+ */
+    background: linear-gradient(180deg, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', endColorstr='#322539',GradientType=0 ); /* ie6-9 */
+    border-top: 1px solid #33253a;
+    border-bottom: 1px solid #1d2f37;
+}
+.blurbs__wrapper{
+    margin: 0 auto;
+    width: 960px;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    padding-top: 79px;
+    padding-bottom: 70px;
+}
+.blurbs__name{
+    font-size: 30px;
+    margin-bottom: 19px;
+}
+.blurbs__link{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    margin-top: 26px;
+    padding-left: 70px;
+}
+.blurbs__box{
+    display: inline-block;
+    width: 190px;
+    margin-left: 27px;
+    margin-right: 63px;
+}
+.blurbs__img{
+    display: inline-block;
+    vertical-align: 150px;
+}
