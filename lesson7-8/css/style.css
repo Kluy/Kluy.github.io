@@ -1,49 +1,150 @@
+@font-face {
+    font-family: 'league_gothicregular';
+    src: url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+    url('../fonts/leaguegothic-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 body{
-    font-family: Arial, Tahoma, sans-serif;
+    font-family: 'Open Sans', Arial, Tahoma, sans-serif;
 }
 
 
 /*--HEADER--*/
 
 
-header{
+.background{
     background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 960px;
+    margin: 0 auto;
+    padding-bottom: 164px;
+    padding-top: 64px;
+}
+.logo{
+    display: inline-block;
+    color: white;
+    font-size: 48px;
+}
+.logo__part1{
+    font-family: 'league_gothicregular', Arial, sans-serif;
+    display: inline-block;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 1px #8a8a8a;
+}
+.logo__part2{
+    display: inline-block;
+    background: -webkit-linear-gradient(#745083, #33263a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: -14px;
+    font-family: 'league_gothicregular', Arial, sans-serif;
+    text-transform: uppercase;
+    margin-right: 121px;
+}
+.menu{
+    display: inline-block;
+    vertical-align: 12px;
+}
+.menu__item{
+    display: inline-block;
+    margin-left: 47px;
+    font-family: 'league_gothicregular', Arial, sans-serif;
+}
+.menu__link{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 1px #8a8a8a;
+}
+.menu__link:hover{
+    border-bottom: 2px solid #edbfff;
 }
 
+
+
+/*--CONTENT--*/
+
+
+
 main{
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 .slider{
     width: 960px;
     margin: 0 auto;
     color: white;
     position: relative;
-    padding-top: 85px;
+    padding-top: 77px;
+    padding-left: 1px;
 }
 .slider__box{
     display: inline-block;
     width: 500px;
-    margin-right: 130px;
+    margin-right: 117px;
     vertical-align: 84px;
 }
 .slider__name{
     font-size: 60px;
+    text-transform: capitalize;
+    text-shadow: 1px 2px 1px #3b3b3b;
+    font-family: 'league_gothicregular', Arial, sans-serif;
 }
 .slider__slogan{
     font-size: 32px;
     text-transform: uppercase;
     color: #edbfff;
+    text-shadow: 1px 2px 1px #3b3b3b;
+    font-family: 'league_gothicregular', Arial, sans-serif;
+}
+.slider__text{
+    line-height: 24px;
+    font-size: 18px;
+    margin-top: 6px;
 }
 .slider__images{
     display: inline-block;
     position: absolute;
-    top: -20px;
+    top: -17px;
 }
-
-
-/*--CONTENT--*/
-
-
+.slider__nav{
+    width: 960px;
+    margin: 0 auto;
+    padding-left: 1181px;
+}
+.slider__button{
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 17px;
+    width: 17px;
+    display: inline-block;
+    margin-top: 93px;
+    margin-bottom: 56px;
+    position: relative;
+    margin-left: 2px;
+}
+.slider__button:after{
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    display: none;
+}
+.slider__button:hover:after{
+    width: 11px;
+    height: 11px;
+    background-color: white;
+    border-radius: 50%;
+    display: block;
+}
 .blurbs{
     background: -moz-linear-gradient(270deg, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%); /* ff3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(116,80,131,1)), color-stop(100%, rgba(50,37,57,1))); /* safari4+,chrome */
@@ -67,6 +168,7 @@ main{
 .blurbs__name{
     font-size: 30px;
     margin-bottom: 19px;
+    font-family: 'league_gothicregular', Arial, sans-serif;
 }
 .blurbs__link{
     color: white;
@@ -74,7 +176,12 @@ main{
     font-size: 18px;
     display: block;
     margin-top: 26px;
-    padding-left: 70px;
+    padding-left: 130px;
+    font-family: 'league_gothicregular', Arial, sans-serif;
+    text-transform: uppercase;
+}
+.blurbs__link:hover{
+    text-shadow: 0 0 10px white;
 }
 .blurbs__box{
     display: inline-block;
