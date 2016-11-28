@@ -139,10 +139,6 @@ main{
     display: none;
 }
 .slider__button:hover:after{
-    width: 11px;
-    height: 11px;
-    background-color: white;
-    border-radius: 50%;
     display: block;
 }
 .blurbs{
@@ -162,34 +158,168 @@ main{
     color: white;
     font-size: 16px;
     position: relative;
-    padding-top: 79px;
+    padding-top: 75px;
     padding-bottom: 70px;
+    padding-left: 21px;
 }
 .blurbs__name{
     font-size: 30px;
-    margin-bottom: 19px;
     font-family: 'league_gothicregular', Arial, sans-serif;
+    text-transform: uppercase;
+}
+.blurbs__box{
+    display: inline-block;
+    width: 243px;
+}
+.blurbs__text{
+    margin-top: 8px;
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+.blurbs__img{
+    display: inline-block;
+    padding-bottom: 155px;
+    background-repeat: no-repeat;
+    background-image: url("../img/wrench.png");
+    width: 31px;
+    height: 31px;
+}
+.wrench{
+    margin-right: 18px;
+}
+.say{
+    background-position: -31px 0;
+    margin-left: 37px;
+    margin-right: 20px;
+}
+.music{
+    background-position: -66px 0;
+    margin-left: 35px;
+    margin-right: 7px;
 }
 .blurbs__link{
     color: white;
     text-decoration: none;
     font-size: 18px;
     display: block;
-    margin-top: 26px;
-    padding-left: 130px;
+    padding-left: 160px;
     font-family: 'league_gothicregular', Arial, sans-serif;
     text-transform: uppercase;
 }
 .blurbs__link:hover{
     text-shadow: 0 0 10px white;
 }
-.blurbs__box{
-    display: inline-block;
-    width: 190px;
-    margin-left: 27px;
-    margin-right: 63px;
+section{
+    background-color: #f9f9f9;
 }
-.blurbs__img{
+.section__wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+.testimonials{
     display: inline-block;
-    vertical-align: 150px;
+    background-color: white;
+    border: 1px solid #f6f6f6;
+    width: 370px;
+    padding: 33px 40px 43px 43px;
+    position: relative;
+}
+.testimonials__img{
+    background-image: url("../img/blog.png");
+    background-repeat: no-repeat;
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    display: block;
+    left: -20px;
+    top: 15px;
+}
+.testimonials__name1{
+    font-size: 30px;
+    font-family: 'league_gothicregular', Arial, sans-serif;
+    color: #454545;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.testimonials__name2{
+    color: #edbfff;
+    display: inline-block;
+    font-size: 30px;
+    font-family: 'league_gothicregular', Arial, sans-serif;
+    text-transform: uppercase;
+}
+.testimonials__text{
+    font-size: 16px;
+    color: #454545;
+    line-height: 25px;
+    margin-top: 15px;
+}
+.testimonials__slider{
+
+}
+.slider__button--testimonials{
+    background-color: white;
+    border: 1px solid #e8e8e8;
+}
+.slider__button--testimonials:hover:after{
+    display: block;
+    width: 11px;
+    height: 11px;
+    background: -moz-linear-gradient(270deg, rgba(136,136,136,1) 0%, rgba(70,70,70,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(136,136,136,1)), color-stop(100%, rgba(70,70,70,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(270deg, rgba(136,136,136,1) 0%, rgba(70,70,70,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(270deg, rgba(136,136,136,1) 0%, rgba(70,70,70,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(270deg, rgba(136,136,136,1) 0%, rgba(70,70,70,1) 100%); /* ie10+ */
+    background: linear-gradient(180deg, rgba(136,136,136,1) 0%, rgba(70,70,70,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#888888', endColorstr='#464646',GradientType=0 ); /* ie6-9 */    border-radius: 50%;
+}
+.blog{
+    font-size: 16px;
+    color: #454545;
+    display: inline-block;
+}
+.blog__name{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'league_gothicregular', Arial, sans-serif;
+}
+.post{
+}
+.post__box{
+    padding-left: 60px;
+    position: relative;
+
+}
+.post__img{
+    width: 49px;
+    height: 49px;
+    background-image: url("../img/blog.png");
+    position: absolute;
+    left: -5px;
+}
+.post1{
+    background-position: -49px 0;
+}
+.post2{
+    background-position: -99px 0;
+}
+.post3{
+    background-position: -148px 0;
+}
+.post__name{
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 28px;
+    margin-top: 26px;
+}
+.blog__item{
+    text-align: right;
+    margin-top: 26px;
+}
+.blog__link{
+    font-size: 18px;
+    font-family: 'league_gothicregular', Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #454545;
 }
