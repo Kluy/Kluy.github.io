@@ -190,7 +190,8 @@ main{
     display: inline-block;
     padding-bottom: 155px;
     background-repeat: no-repeat;
-    background-image: url("../img/wrench.png");
+    background-image: url("../img/blog.png");
+    background-position: 0 -51px;
     width: 31px;
     height: 31px;
 }
@@ -198,12 +199,12 @@ main{
     margin-right: 18px;
 }
 .say{
-    background-position: -31px 0;
+    background-position-x: -32px;
     margin-left: 37px;
     margin-right: 20px;
 }
 .music{
-    background-position: -66px 0;
+    background-position-x: -66px;
     margin-left: 35px;
     margin-right: 7px;
 }
