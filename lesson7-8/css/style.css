@@ -28,7 +28,7 @@ nav{
     display: inline-block;
     color: white;
     font-size: 48px;
-    margin-right: 121px;
+    margin-right: 168px;
 }
 .logo__part{
     font-family: 'league_gothicregular', Arial, sans-serif;
@@ -50,8 +50,8 @@ nav{
 }
 .menu__item{
     display: inline-block;
-    margin-left: 47px;
     font-family: 'league_gothicregular', Arial, sans-serif;
+    margin-left: 47px;
 }
 .menu__link{
     color: white;
@@ -59,6 +59,9 @@ nav{
     font-size: 24px;
     text-transform: uppercase;
     text-shadow: 1px 2px 1px #8a8a8a;
+}
+li:first-child{
+    margin: 0;
 }
 .menu__link:hover{
     border-bottom: 2px solid #edbfff;
@@ -167,10 +170,8 @@ main{
     width: 960px;
     color: white;
     font-size: 16px;
-    position: relative;
     padding-top: 75px;
     padding-bottom: 70px;
-    padding-left: 21px;
 }
 .blurbs__name{
     font-size: 30px;
@@ -178,8 +179,17 @@ main{
     text-transform: uppercase;
 }
 .blurbs__box{
+    position: relative;
     display: inline-block;
-    width: 243px;
+    padding-left: 64px;
+    padding-right: 30px;
+    width: 25%;
+}
+.blurbs__box--2{
+    padding-right: 8px;
+}
+.blurbs__box--3{
+    padding-right: 0;
 }
 .blurbs__text{
     margin-top: 8px;
@@ -187,35 +197,31 @@ main{
     line-height: 24px;
 }
 .blurbs__img{
-    display: inline-block;
-    padding-bottom: 155px;
+    position: absolute;
     background-repeat: no-repeat;
     background-image: url("../img/blog.png");
     background-position: 0 -51px;
+    top: 7px;
+    left: 10px;
     width: 31px;
     height: 31px;
 }
 .wrench{
-    margin-right: 18px;
 }
 .say{
     background-position-x: -32px;
-    margin-left: 37px;
-    margin-right: 20px;
 }
 .music{
     background-position-x: -66px;
-    margin-left: 35px;
-    margin-right: 7px;
 }
 .blurbs__link{
     color: white;
     text-decoration: none;
     font-size: 18px;
     display: block;
-    padding-left: 160px;
     font-family: 'league_gothicregular', Arial, sans-serif;
     text-transform: uppercase;
+    text-align: right;
 }
 .blurbs__link:hover{
     text-shadow: 0 0 10px white;
@@ -302,8 +308,7 @@ section{
     text-transform: uppercase;
     font-size: 30px;
     font-family: 'league_gothicregular', Arial, sans-serif;
-    margin-bottom: 16px;
-
+    margin-bottom: 18px;
 }
 .post__box{
     padding-left: 67px;
@@ -315,6 +320,7 @@ section{
     background-image: url("../img/blog.png");
     position: absolute;
     left: 0;
+    top: -2px;
 }
 .post1{
     background-position: -49px 0;
@@ -328,14 +334,14 @@ section{
 .post__name{
     font-size: 16px;
     font-weight: 900;
-    line-height: 27px;
 }
 .post__text{
-    margin-bottom: 24px;
+    margin-top: 8px;
+    margin-bottom: 26px;
 }
 .blog__item{
     text-align: right;
-    margin-top: 27px;
+    margin-top: 28px;
 }
 .blog__link{
     font-size: 18px;
@@ -350,11 +356,12 @@ section{
     background-color: #f9f9f9;
 }
 .logos__box{
-    width: 960px;
     margin: 0 auto;
+    width: 960px;
     padding-top: 24px;
     padding-bottom: 30px;
-    padding-left: 186px;
+    text-align: center;
+    padding-left: 65px;
 }
 .logos__img{
     margin-right: 63px;
@@ -438,7 +445,9 @@ footer{
 }
 .designed{
     display: inline-block;
-    margin-left: 254px;
+    text-align: right;
+    width: 40%;
+    padding-left: 5px;
 }
 .designed__text{
     display: inline-block;
@@ -447,4 +456,78 @@ footer{
 }
 .designed__text--1{
     font-weight: bold;
+}
+@media (max-width: 768px){
+    .menu{
+        width: 100%
+    }
+    .slider__box{
+        width: 35%;
+    }
+    .slider__images{
+        width: 40%;
+    }
+    .blurbs__box{
+        width: 15%
+    }
+    .testimonials{
+        width: 29%;
+    }
+    .blog{
+        width: 29%
+    }
+    .logos__box{
+        padding-left: 0;
+        text-align: left;
+    }
+    .logos__img{
+        margin-right: 51px;
+    }
+    .text__box{
+        width: 21%;
+    }
+    .designed{
+        padding-top: 40px;
+        width: 74%;
+    }
+}
+@media (max-width: 480px){
+    .menu{
+        width: 100%
+    }
+    .slider__box{
+        width: 35%;
+    }
+    .slider__text{
+        display: none;
+    }
+    .slider__images{
+        width: 40%;
+    }
+    .blurbs__box{
+        width: 370px
+    }
+    .testimonials{
+        width: 40%;
+    }
+    .blog{
+        width: 45%
+    }
+    .logos__box{
+        padding-left: 0;
+        text-align: center;
+        width: 90%;
+    }
+    .logos__img{
+        margin-right: 51px;
+    }
+    .text__box{
+        width: 460px;
+    }
+    .footer__box{
+    }
+    .designed{
+        padding-top: 40px;
+        width: 74%;
+    }
 }
