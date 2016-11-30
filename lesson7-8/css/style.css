@@ -28,22 +28,21 @@ nav{
     display: inline-block;
     color: white;
     font-size: 48px;
+    margin-right: 121px;
 }
-.logo__part1{
+.logo__part{
     font-family: 'league_gothicregular', Arial, sans-serif;
     display: inline-block;
     text-transform: uppercase;
     text-shadow: 1px 2px 1px #8a8a8a;
 }
-.logo__part2{
+.logo__part--1{
     display: inline-block;
     background: -webkit-linear-gradient(#745083, #33263a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: -14px;
-    font-family: 'league_gothicregular', Arial, sans-serif;
-    text-transform: uppercase;
-    margin-right: 121px;
+    text-shadow: none;
 }
 .menu{
     vertical-align: 12px;
@@ -74,6 +73,15 @@ nav{
 main{
     background-color: rgba(0, 0, 0, 0.3);
 }
+.slider__arrow{
+    position: absolute;
+    top: 180px;
+    left: -320px;
+}
+.slider__arrow--right{
+    transform: rotate(180deg);
+    left: 1255px;
+}
 .slider{
     width: 960px;
     margin: 0 auto;
@@ -81,6 +89,7 @@ main{
     position: relative;
     padding-top: 77px;
     padding-left: 1px;
+    clear: both;
 }
 .slider__box{
     display: inline-block;
@@ -240,19 +249,15 @@ section{
     left: -24px;
     top: 22px;
 }
-.testimonials__name1{
+.testimonials__name{
     font-size: 30px;
     font-family: 'league_gothicregular', Arial, sans-serif;
     color: #454545;
     display: inline-block;
     text-transform: uppercase;
 }
-.testimonials__name2{
+.testimonials__name--part{
     color: #edbfff;
-    display: inline-block;
-    font-size: 30px;
-    font-family: 'league_gothicregular', Arial, sans-serif;
-    text-transform: uppercase;
 }
 .testimonials__text{
     font-size: 16px;
@@ -381,12 +386,8 @@ section{
     display: inline-block;
     padding-bottom: 6px;
 }
-.text__titel2{
+.text__titel--2{
     color: #b9b9b9;
-    font-size: 48px;
-    font-family: 'league_gothicregular', Arial, sans-serif;
-    text-transform: uppercase;
-    display: inline-block;
 }
 .text__copy{
     color: #c5c5c5;
@@ -416,6 +417,7 @@ footer{
     background-image: url("../img/footer.jpg");
     background-repeat: no-repeat;
     padding: 46px 0;
+    background-size: cover;
 }
 .menu--footer{
     text-align: left;
@@ -435,14 +437,13 @@ footer{
 }
 .designed{
     display: inline-block;
-    font-size: 12px;
-    color: white;
     margin-left: 254px;
 }
-.designed__1{
+.designed__text{
     display: inline-block;
+    font-size: 12px;
+    color: white;
 }
-.designed__2{
-    display: inline-block;
+.designed__text--1{
     font-weight: bold;
 }
