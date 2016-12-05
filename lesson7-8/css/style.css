@@ -17,6 +17,7 @@ body{
     background-image: url(../img/header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center top;
 }
 nav{
     width: 960px;
@@ -85,10 +86,10 @@ main{
     margin-right: 10px;
 }
 .slider__arrow--right{
-    float: right;
     transform: rotate(180deg);
-    width: 18%;
-    text-align: center;
+    float: right;
+    width: 9%;
+    margin-right: 0;
 }
 /*.slider__arrow{
     position: absolute;
@@ -100,17 +101,17 @@ main{
     left: 1255px;
 }*/
 .slider{
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     color: white;
     padding-top: 77px;
-    padding-left: 1px;
-    position: relative;
+    overflow: hidden;
 }
 .slider__box{
     display: inline-block;
-    width: 53%;
+    max-width: 53%;
     vertical-align: 84px;
+    padding-right: 470px;
 }
 .slider__name{
     font-size: 60px;
@@ -133,8 +134,8 @@ main{
 .slider__images{
     position: absolute;
     top: -17px;
-    text-align: right;
-    width: 92%;
+    text-align: center;
+    width: 64%;
     right: 70px;
 }
 .slider__nav{
@@ -179,7 +180,7 @@ main{
 }
 .blurbs__wrapper{
     margin: 0 auto;
-    width: 960px;
+    max-width: 960px;
     color: white;
     font-size: 16px;
     padding-top: 75px;
@@ -243,7 +244,7 @@ section{
     border-bottom: 1px solid #e6e6e6;
 }
 .section__wrapper{
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     padding-top: 94px;
 }
@@ -316,7 +317,7 @@ section{
     font-size: 16px;
     color: #454545;
     display: inline-block;
-    width: 40%;
+    width: 38%;
 }
 .blog__name{
     text-transform: uppercase;
@@ -371,7 +372,7 @@ section{
 }
 .logos__box{
     margin: 0 auto;
-    width: 960px;
+    max-width: 960px;
     padding-top: 24px;
     padding-bottom: 30px;
     text-align: center;
@@ -386,14 +387,14 @@ section{
     border-top: 1px solid #d8d8d8;
 }
 .text__wrapper{
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     padding-top: 95px;
     padding-bottom: 93px;
 }
 .text__box{
     display: inline-block;
-    width: 275px;
+    width: 28%;
     vertical-align: top;
     padding-right: 59px;
 }
@@ -455,7 +456,7 @@ footer{
     text-shadow: 1px 2px 1px #3b3b3b;
 }
 .footer__box{
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
 }
 .designed{
@@ -473,6 +474,11 @@ footer{
 .designed__text--1{
     font-weight: bold;
 }
+
+
+/*--MEDIA QUERIES--*/
+
+
 @media (max-width: 768px){
     .logo{
         margin-left: 20px;
@@ -483,77 +489,193 @@ footer{
         margin-left: 20px;
     }
     .slider__box{
-        width: 35%;
+        width: 50%;
     }
     .slider__images{
-        text-align: center;
+        text-align: right;
         width: 70%;
     }
     .slider__arrow{
         text-align: left;
         width: 6%;
     }
+    .slider__arrow--right{
+        text-align: right;
+        width: 3%;
+    }
+    .slider__nav{
+        text-align: right;
+        width: 78%;
+    }
     .blurbs__box{
-        width: 15%
+        width: 21%
     }
     .testimonials{
-        width: 33%;
+        width: 43%;
+        padding-left: 20px;
     }
     .blog{
-        width: 33%
+        max-width: 43%
     }
     .logos__box{
         padding-left: 0;
-        text-align: left;
     }
     .logos__img{
-        margin-right: 51px;
+        margin: 0;
+        padding-left: 20px;
+        padding-right: 26px;
     }
     .text__box{
-        width: 21%;
+        width: 23%;
+        padding-left: 20px;
     }
     .designed{
         padding-top: 40px;
-        width: 74%;
+        width: 96%;
     }
 }
 @media (max-width: 480px){
+    .logo{
+        text-align: center;
+        display: block;
+        width: 44%;
+    }
     .menu{
-        width: 100%
+        width: 100%;
+        margin-right: 0;
+        display: none;
+    }
+    .menu:first-child{
+        display: block;
     }
     .slider__box{
-        width: 35%;
+        width: 46%;
+    }
+    .slider__name{
+        font-size: 36px;
+    }
+    .slider__slogan{
+        font-size: 18px;
     }
     .slider__text{
         display: none;
     }
     .slider__images{
         width: 40%;
+        transform: scale(0.7);
+        top: -80px;
+    }
+    .slider__arrow{
+        margin-top: 100px;
+    }
+    .slider__nav{
+        text-align: center;
+        width: 100%;
+        margin-right: 0;
+        margin-top: -60px;
     }
     .blurbs__box{
-        width: 370px
+        width: 83%;
+        display: block;
     }
     .testimonials{
-        width: 40%;
+        width: 93%;
+        margin-left: 20px;
     }
     .blog{
-        width: 45%
+        min-width: 93%;
+        margin-top: -40px;
+        margin-bottom: 90px;
+        margin-left: 20px;
     }
     .logos__box{
-        padding-left: 0;
         text-align: center;
         width: 90%;
+        padding: 40px 0;
     }
     .logos__img{
-        margin-right: 51px;
+        margin-right: 0;
+        margin-top: 30px;
     }
     .text__box{
-        width: 460px;
+        width: 88%;
+        margin-left: 20px;
+        display: block;
     }
-    .footer__box{
+    .text__name{
+        margin-top: 60px;
+    }
+    footer{
+        padding-top: 20px;
+    }
+    .menu--footer{
+        display: block;
+    }
+    .menu--footer .menu__item{
+        margin-right: 15px;
     }
     .designed{
-        padding-top: 40px;
-        width: 74%;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 40px;
+    }
+}
+@media (max-width: 320px){
+    .logo{
+        text-align: center;
+        display: block;
+        width: 28%;
+    }
+    .menu{
+        display: none;
+    }
+    .slider__box{
+        margin-right: 0;
+        margin-left: 6px;
+    }
+    .slider__text{
+        display: none;
+    }
+    .slider__images{
+        display: none;
+    }
+    .slider__name{
+        width: 190%;
+        text-align: center;
+    }
+    .slider__slogan{
+        width: 190%;
+        text-align: center;
+    }
+    .blurbs__box{
+        width: 75%;
+        display: block;
+        margin-top: 25px;
+    }
+    .testimonials{
+        width: 75%;
+        margin-left: 20px;
+    }
+    .blog{
+        min-width: 75%;
+        margin-top: -40px;
+        margin-bottom: 90px;
+        margin-left: 20px;
+    }
+    .logos__img{
+        margin-right: 5px;
+        margin-top: 30px;
+    }
+    .text{
+        display: none;
+    }
+    .menu__item{
+        display: none;
+    }
+    .designed{
+        text-align: center;
+        padding-bottom: 40px;
+        width: 100%;
+        margin-top: -40px;
     }
 }
