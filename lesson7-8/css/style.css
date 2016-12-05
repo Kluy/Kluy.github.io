@@ -20,7 +20,7 @@ body{
     background-position: center top;
 }
 nav{
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     padding-bottom: 164px;
     padding-top: 64px;
@@ -598,13 +598,13 @@ footer{
 @media (max-width: 480px){
     .droplist_menu{
         display: block;
-        width: 80%;
+        width: 55%;
+        margin: 0 auto;
         padding-top: 25px;
     }
     .logo{
-        display: block;
-        margin: 0 auto;
-        width: 70%;
+        text-align: center;
+        width: 90%;
     }
     .menu{
         width: 100%;
@@ -689,11 +689,11 @@ footer{
 @media (max-width: 320px){
     .droplist_menu{
         display: block;
-        width: 95%;
+        width: 85%;
         padding-top: 25px;
     }
     .logo{
-        width: 85%;
+        width: 100%;
     }
     .menu{
         display: none;
