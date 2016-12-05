@@ -51,8 +51,7 @@ nav{
 }
 .menu__item{
     display: inline-block;
-    font-family: 'league_gothicregular', Arial, sans-serif;
-    margin-left: 47px;
+    margin-left: 37px;
 }
 .menu__link{
     color: white;
@@ -60,6 +59,8 @@ nav{
     font-size: 24px;
     text-transform: uppercase;
     text-shadow: 1px 2px 1px #8a8a8a;
+    padding: 0 4px;
+    font-family: 'league_gothicregular', Arial, sans-serif;
 }
 li:first-child{
     margin: 0;
@@ -67,8 +68,68 @@ li:first-child{
 .menu__link:hover{
     border-bottom: 2px solid #edbfff;
 }
-
-
+.droplist_menu{
+    text-align: center;
+    width: 246px;
+    margin: 0 auto;
+    line-height: 40px;
+    position: relative;
+    display: none;
+}
+.droplist_menu__item{
+    position: absolute;
+    z-index: 2;
+    width: 246px;
+}
+.droplist_menu__item{
+}
+.droplist_menu__home_link{
+    border-bottom: 2px solid #edbfff;
+}
+.droplist{
+    background-color: rgba(59, 46, 67, 0.9);
+    width: 246px;
+    position: absolute;
+    padding-top: 49px;
+    margin-top: -7px;
+    border: 1px solid #121b22;
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    z-index: 1;
+}
+.droplist_menu:hover .droplist{
+    display: block;
+}
+.droplist__item{
+    border-bottom: 2px solid transparent;
+}
+.droplist__item:before{
+    content: '';
+    display: block;
+    border-top: 1px solid #513e59;
+    border-bottom: 1px solid #36283e;
+}
+.droplist__item:first-child:before{
+    content: '';
+    border-bottom: 1px solid #36283e;
+    width: 246px;
+    display: block;
+    margin-top: -2px;
+}
+.droplist__item:last-child{
+    border-bottom: none;
+}
+.droplist__item:hover{
+    border-bottom: 2px solid #edbfff;
+    background-color: rgba(46, 37, 52, 0.9);
+}
+.menu__link--droplist{
+    text-shadow: none;
+}
+.menu__link--droplist:hover{
+    border-bottom: none;
+}
 
 /*--CONTENT--*/
 
@@ -486,7 +547,7 @@ footer{
     .menu{
         width: 100%;
         margin-top: 35px;
-        margin-left: 20px;
+        margin-left: 16px;
     }
     .slider__box{
         width: 50%;
@@ -535,10 +596,15 @@ footer{
     }
 }
 @media (max-width: 480px){
-    .logo{
-        text-align: center;
+    .droplist_menu{
         display: block;
-        width: 44%;
+        width: 80%;
+        padding-top: 25px;
+    }
+    .logo{
+        display: block;
+        margin: 0 auto;
+        width: 70%;
     }
     .menu{
         width: 100%;
@@ -621,10 +687,13 @@ footer{
     }
 }
 @media (max-width: 320px){
-    .logo{
-        text-align: center;
+    .droplist_menu{
         display: block;
-        width: 28%;
+        width: 95%;
+        padding-top: 25px;
+    }
+    .logo{
+        width: 85%;
     }
     .menu{
         display: none;

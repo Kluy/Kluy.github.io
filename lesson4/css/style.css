@@ -90,9 +90,6 @@ body{
     padding-left: 10px;
     padding-bottom: 5px;
 }
-.submenu li{
-    display: block;
-}
 .submenu2{
     width: 135px;
     display: none;
