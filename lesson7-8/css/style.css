@@ -529,9 +529,10 @@ footer{
 .designed{
     display: inline-block;
     text-align: right;
-    width: 40%;
     padding-left: 5px;
     text-shadow: 1px 2px 1px #252525;
+    padding-top: 20px;
+    width: 35%;
 }
 .designed__text{
     display: inline-block;
@@ -556,19 +557,29 @@ footer{
         margin-left: 16px;
     }
     .slider__box{
-        width: 50%;
+        width: 37%;
+        height: 220px;
+        overflow: hidden;
     }
     .slider__images{
         text-align: right;
-        width: 70%;
+        width: 48%;
+    }
+    .slider__name{
+        font-size: 48px;
+    }
+    .slider__slogan{
+        font-size: 24px;
+    }
+    .slider__text{
+        font-size: 16px;
     }
     .slider__arrow{
         text-align: left;
         width: 6%;
     }
     .slider__arrow--right{
-        text-align: right;
-        width: 3%;
+        max-width: 3%;
     }
     .slider__nav{
         text-align: right;
@@ -577,9 +588,16 @@ footer{
     .blurbs__box{
         width: 21%
     }
+    .blurbs__name{
+        font-size: 24px;
+    }
     .testimonials{
         width: 43%;
         padding-left: 20px;
+    }
+    .testimonials__name{
+        font-size: 24px;
+        display: block;
     }
     .blog{
         max-width: 43%
@@ -607,6 +625,9 @@ footer{
     }
     .text__copy{
         display: none;
+    }
+    .text__name{
+        font-size: 24px;
     }
     .text__name--1{
         display: block;
@@ -640,6 +661,7 @@ footer{
     }
     .slider__box{
         width: 46%;
+        height: 1%;
     }
     .slider__name{
         font-size: 36px;
@@ -651,12 +673,15 @@ footer{
         display: none;
     }
     .slider__images{
-        width: 40%;
+        width: 56%;
         transform: scale(0.7);
         top: -80px;
+        right: 10px;
     }
     .slider__arrow{
         margin-top: 100px;
+    }
+    .slider__arrow--right{
     }
     .slider__nav{
         text-align: center;
@@ -671,6 +696,9 @@ footer{
     .testimonials{
         width: 93%;
         margin-left: 20px;
+    }
+    .testimonials__name{
+        display: inline-block;
     }
     .blog{
         min-width: 93%;
