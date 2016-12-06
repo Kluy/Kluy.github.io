@@ -419,6 +419,9 @@ section{
     text-align: right;
     margin-top: 28px;
 }
+.blog__item--media{
+    display: none;
+}
 .blog__link{
     font-size: 18px;
     font-family: 'league_gothicregular', Arial, sans-serif;
@@ -486,6 +489,9 @@ section{
     text-transform: uppercase;
     color: #454545;
     padding-bottom: 8px;
+}
+.text__name--1{
+    display: none;
 }
 .text__text{
     color: #787878;
@@ -578,6 +584,12 @@ footer{
     .blog{
         max-width: 43%
     }
+    .blog__item{
+        display: none;
+    }
+    .blog__item--media{
+        display: block;
+    }
     .logos__box{
         padding-left: 0;
     }
@@ -589,6 +601,18 @@ footer{
     .text__box{
         width: 23%;
         padding-left: 20px;
+    }
+    .text__titel{
+        display: none;
+    }
+    .text__copy{
+        display: none;
+    }
+    .text__name--1{
+        display: block;
+    }
+    .text__name--2{
+        display: none;
     }
     .designed{
         padding-top: 40px;
@@ -654,6 +678,12 @@ footer{
         margin-bottom: 90px;
         margin-left: 20px;
     }
+    .blog__item{
+        display: none;
+    }
+    .blog__item--media{
+        display: block;
+    }
     .logos__box{
         text-align: center;
         width: 90%;
@@ -668,6 +698,18 @@ footer{
         margin-left: 20px;
         display: block;
     }
+    .text__titel{
+        display: none;
+    }
+    .text__copy{
+        display: none;
+    }
+    .text__name--1{
+        display: block;
+    }
+    .text__name--2{
+        display: none;
+    }
     .text__name{
         margin-top: 60px;
     }
@@ -678,7 +720,7 @@ footer{
         display: block;
     }
     .menu--footer .menu__item{
-        margin-right: 15px;
+        margin-right: 10px;
     }
     .designed{
         text-align: center;
@@ -693,7 +735,7 @@ footer{
         padding-top: 25px;
     }
     .logo{
-        width: 100%;
+        width: 87%;
     }
     .menu{
         display: none;
@@ -726,14 +768,27 @@ footer{
         margin-left: 20px;
     }
     .blog{
-        min-width: 75%;
+        min-width: 85%;
         margin-top: -40px;
         margin-bottom: 90px;
         margin-left: 20px;
     }
+    .blog__item{
+        display: none;
+    }
+    .blog__item--media{
+        display: block;
+    }
     .logos__img{
-        margin-right: 5px;
-        margin-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .logos__img--2{
+        padding-left: 40px;
+        margin-right: -10px;
+    }
+    .logos__img--3{
+        padding-right: 50px;
     }
     .text{
         display: none;
