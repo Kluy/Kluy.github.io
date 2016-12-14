@@ -1,7 +1,8 @@
 @font-face {
     font-family: 'league_gothicregular';
     src: url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
-    url('../fonts/leaguegothic-regular-webfont.woff') format('woff');
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff');
+         url('../fonts/leaguegothic-regular-webfont.eot') format('eot');
     font-weight: normal;
     font-style: normal;
 }
@@ -19,17 +20,17 @@ body{
     background-size: cover;
     background-position: center top;
 }
-nav{
+header{
     max-width: 960px;
     margin: 0 auto;
     padding-bottom: 164px;
-    padding-top: 64px;
+    padding-top: 38px;
 }
 .logo{
     display: inline-block;
     color: white;
     font-size: 48px;
-    margin-right: 168px;
+    margin-right: 164px;
 }
 .logo__part{
     font-family: 'league_gothicregular', Arial, sans-serif;
@@ -48,6 +49,7 @@ nav{
 .menu{
     vertical-align: 12px;
     display: inline-block;
+    margin-top: 35px;
 }
 .menu__item{
     display: inline-block;
@@ -149,7 +151,7 @@ main{
 .slider__arrow--right{
     transform: rotate(180deg);
     float: right;
-    width: 9%;
+    width: 8%;
     margin-right: 0;
 }
 .slider{
@@ -157,13 +159,19 @@ main{
     margin: 0 auto;
     color: white;
     padding-top: 77px;
-    overflow: hidden;
+    position: relative;
+}
+.slider__images{
+    position: absolute;
+    top: -17px;
+    text-align: right;
+    width: 64%;
+    right: 70px;
 }
 .slider__box{
     display: inline-block;
-    max-width: 53%;
-    vertical-align: 84px;
-    padding-right: 470px;
+    max-width: 43%;
+    vertical-align: 73px;
 }
 .slider__name{
     font-size: 60px;
@@ -182,13 +190,8 @@ main{
     line-height: 24px;
     font-size: 18px;
     margin-top: 6px;
-}
-.slider__images{
-    position: absolute;
-    top: -17px;
-    text-align: center;
-    width: 64%;
-    right: 70px;
+    height: 149px;
+    overflow: hidden;
 }
 .slider__nav{
     padding-top: 93px;
@@ -248,7 +251,7 @@ main{
     display: inline-block;
     padding-left: 64px;
     padding-right: 30px;
-    width: 25%;
+    width: 22%;
 }
 .blurbs__box--2{
     padding-right: 8px;
@@ -271,12 +274,12 @@ main{
     width: 31px;
     height: 31px;
 }
-.wrench{
+.blurbs__img--wrench{
 }
-.say{
+.blurbs__img--say{
     background-position-x: -32px;
 }
-.music{
+.blurbs__img--music{
     background-position-x: -66px;
 }
 .blurbs__link{
@@ -449,7 +452,7 @@ section{
 }
 .text__box{
     display: inline-block;
-    width: 28%;
+    width: 27%;
     vertical-align: top;
     padding-right: 59px;
 }
@@ -547,9 +550,13 @@ footer{
         margin-top: 35px;
         margin-left: 16px;
     }
+    .menu__item{
+        margin-right: 4%;
+        margin-left: 0;
+    }
     .slider__box{
-        width: 37%;
-        height: 220px;
+        width: 33%;
+        height: 268px;
         overflow: hidden;
     }
     .slider__images{
@@ -575,12 +582,20 @@ footer{
     .slider__nav{
         text-align: right;
         width: 78%;
+        padding-top: 36px;
+        padding-bottom: 93px;
     }
     .blurbs__box{
-        width: 21%
+        width: 21%;
+        padding-left: 10%;
+        padding-right: 1%;
     }
     .blurbs__name{
         font-size: 24px;
+    }
+    .blurbs__text{
+        height: 140px;
+        overflow: hidden;
     }
     .testimonials{
         width: 43%;
@@ -589,6 +604,10 @@ footer{
     .testimonials__name{
         font-size: 24px;
         display: block;
+    }
+    .testimonials__text{
+        height: 310px;
+        overflow: hidden;
     }
     .blog{
         max-width: 43%
@@ -608,8 +627,11 @@ footer{
         padding-right: 26px;
     }
     .text__box{
-        width: 23%;
+        width: 27%;
         padding-left: 20px;
+        height: 200px;
+        overflow: hidden;
+        padding-right: 1%;
     }
     .text__titel{
         display: none;
@@ -637,8 +659,6 @@ footer{
     }
     .droplist_menu{
         display: block;
-        width: 55%;
-        margin: 0 auto;
         padding-top: 25px;
     }
     .logo{
@@ -668,8 +688,8 @@ footer{
     }
     .slider__images{
         width: 59%;
-        transform: scale(0.7);
-        top: -80px;
+        transform: scale(0.40);
+        top: -85px;
         right: 10px;
     }
     .slider__arrow{
@@ -681,12 +701,13 @@ footer{
     .slider__nav{
         text-align: center;
         width: 100%;
-        margin-right: 0;
-        margin-top: -60px;
+        margin-top: -20px;
+        padding-bottom: 50px;
     }
     .blurbs__box{
         width: 83%;
         display: block;
+        padding-left: 50px;
     }
     .testimonials{
         width: 93%;
@@ -694,6 +715,9 @@ footer{
     }
     .testimonials__name{
         display: inline-block;
+    }
+    .testimonials__text{
+        height: auto;
     }
     .blog{
         min-width: 93%;
@@ -723,6 +747,7 @@ footer{
         width: 88%;
         margin-left: 20px;
         display: block;
+        height: 210px;
     }
     .text__titel{
         display: none;
@@ -743,7 +768,10 @@ footer{
         padding-top: 20px;
     }
     .menu--footer{
+        width: 100%;
         display: block;
+        text-align: center;
+        margin-left: 4px;
     }
     .menu--footer .menu__item{
         margin-right: 10px;
@@ -769,6 +797,7 @@ footer{
     .slider__box{
         margin-right: 0;
         margin-left: 6px;
+        overflow: visible;
     }
     .slider__text{
         display: none;
@@ -781,17 +810,22 @@ footer{
         text-align: center;
     }
     .slider__slogan{
-        width: 190%;
+        width: 180%;
         text-align: center;
     }
     .blurbs__box{
         width: 75%;
         display: block;
         margin-top: 25px;
+        padding-left: 56px;
     }
     .testimonials{
         width: 75%;
         margin-left: 20px;
+    }
+    .testimonials__text{
+        height: 177px;
+        overflow: hidden;
     }
     .blog{
         min-width: 85%;
