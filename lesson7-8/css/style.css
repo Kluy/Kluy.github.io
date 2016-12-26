@@ -21,16 +21,17 @@ body{
     background-position: center top;
 }
 header{
-    max-width: 960px;
+    max-width: 990px;
     margin: 0 auto;
     padding-bottom: 164px;
     padding-top: 38px;
+    padding-left: 25px;
 }
 .logo{
     display: inline-block;
     color: white;
     font-size: 48px;
-    margin-right: 164px;
+    margin-right: 140px;
 }
 .logo__part{
     font-family: 'league_gothicregular', Arial, sans-serif;
@@ -82,8 +83,14 @@ li:first-child{
     position: absolute;
     z-index: 2;
     width: 246px;
+    margin-top: 1px;
+    margin-left: 1px;
 }
-.droplist_menu__item{
+.droplist_menu__item:hover{
+    border-bottom: 2px solid #edbfff;
+    background-color: rgba(46, 37, 52, 0.9);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .droplist_menu__home_link{
     border-bottom: 2px solid #edbfff;
@@ -92,8 +99,7 @@ li:first-child{
     background-color: rgba(59, 46, 67, 0.9);
     width: 246px;
     position: absolute;
-    padding-top: 49px;
-    margin-top: -7px;
+    padding-top: 46px;
     border: 1px solid #121b22;
     border-radius: 10px;
     overflow: hidden;
@@ -128,10 +134,13 @@ li:first-child{
 }
 .menu__link--droplist{
     text-shadow: none;
+    display: block;
 }
 .menu__link--droplist:hover{
     border-bottom: none;
 }
+
+
 
 /*--CONTENT--*/
 
@@ -785,7 +794,7 @@ footer{
 @media (max-width: 320px){
     .droplist_menu{
         display: block;
-        width: 85%;
+        width: 90%;
         padding-top: 25px;
     }
     .logo{
