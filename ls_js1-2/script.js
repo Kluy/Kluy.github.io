@@ -17,11 +17,8 @@ function pow(number,power) {
     console.log('result', number);
 }
 
-function isInteger(number) {
-    return number % 1 === 0;
-}
-function isIntegerTwo(power) {
-    return power % 1 === 0;
+function isInteger(arg) {
+    return arg % 1 === 0;
 }
 
 number = prompt('Введите число');
@@ -33,7 +30,7 @@ while (isNaN(number) == true || number == "" || isInteger(number) == false) {
 if (isNaN(number) == false) {
     power = prompt('Введите степень');
 
-    while (isNaN(power) == true || power == "" || isIntegerTwo(power) == false || power < 0) {
+    while (isNaN(power) == true || power == "" || isInteger(power) == false || power < 0) {
         power = prompt('Степень введена неверно, введите целое число > или = 0');
     }
 
