@@ -4,9 +4,6 @@
 
 function pow(number,power) {
     j = number;
-    while (power < 0) {
-        power = prompt('Введите степень > или = 0');
-    }
     if (power > 0) {
         var i=1;
         while (i < power){
@@ -20,21 +17,27 @@ function pow(number,power) {
     console.log('result', number);
 }
 
+function isInteger(number) {
+    return number % 1 === 0;
+}
+function isIntegerTwo(power) {
+    return power % 1 === 0;
+}
+
 number = prompt('Введите число');
 
-Number.isNaN = Number.isNaN || function (number) {
-        return typeof number === 'number' && isNaN(number)
-    }
-while (isNaN(number) == true) {
+while (isNaN(number) == true || number == "" || isInteger(number) == false) {
     number = prompt('Число введено неверно, введите число');
-} if (isNaN(number) == false) {
+}
+
+if (isNaN(number) == false) {
     power = prompt('Введите степень');
-    Number.isNaN = Number.isNaN || function (power) {
-            return typeof power === 'number' && isNaN(power)
-        }
-    while (isNaN(power) == true) {
-        power = prompt('Степень введена неверно, введите число');
-    } if (isNaN(power) == false) {
+
+    while (isNaN(power) == true || power == "" || isIntegerTwo(power) == false || power < 0) {
+        power = prompt('Степень введена неверно, введите целое число > или = 0');
+    }
+
+    if (isNaN(power) == false) {
         pow(number,power);
     }
 }
