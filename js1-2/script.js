@@ -21,6 +21,7 @@ if (Names.pop() == yourName) {
 }
 
 
+
 // if (yourName == arrNames[0] || yourName == arrNames[1] || yourName == arrNames[2] || yourName == arrNames[3] || yourName == arrNames[4]) {
 //     alert('Hello,' + yourName + '!');
 // } else {alert('Wrong name!');}
