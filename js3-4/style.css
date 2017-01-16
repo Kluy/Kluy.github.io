@@ -1,0 +1,13 @@
+.question{
+    line-height: 55px;
+    font-size: 16px;
+}
+.input_checkbox{
+}
+.answer{
+    padding-left: 35px;
+}
+.button{
+    margin-top: 20px;
+    margin-left: 200px;
+}
