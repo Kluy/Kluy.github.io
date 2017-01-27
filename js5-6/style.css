@@ -1,0 +1,52 @@
+body{
+    padding: 70px;
+}
+div{
+    font-size: 100px;
+    font-weight: bold;
+    font-family: Arial, Tahoma, sans-serif;
+    border: 15px solid black;
+    border-radius: 60px;
+    width: 350px;
+    display: inline-block;
+    text-align: center;
+    background-color: green;
+}
+.wrapper{
+    background: whitesmoke;
+    padding: 0 40px;
+    display: block;
+    margin-bottom: 40px;
+    width: 1000px;
+}
+.timer{
+    background: none;
+    border: none;
+    display: inline-block;
+    font-size: 200px;
+    width: 270px;
+}
+.dots{
+    background: none;
+    border: none;
+    display: inline-block;
+    font-size: 200px;
+    width: auto;
+}
+
+.milliseconds{
+    font-size: 45px;
+    display: block;
+    text-align: right;
+    width: 859px;
+    margin-bottom: 8px;
+}
+
+.clear_button{
+    background-color: red;
+    margin-left: 350px;
+    cursor: pointer;
+}
+.start_button{
+    cursor: pointer;
+}

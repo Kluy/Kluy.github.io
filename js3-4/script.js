@@ -10,8 +10,6 @@ body.appendChild(wrapper);
 
 var header = document.createElement('header');
 header.innerHTML = 'Programming test';
-
-body = document.querySelector('wrapper');
 wrapper.appendChild(header);
 
 var form = document.createElement('form');
