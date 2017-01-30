@@ -72,7 +72,7 @@ function pauseTimer() {
 function start() {
     milliSec++;
     milliSeconds.innerHTML = milliSec;
-    if (milliSec === 1) {
+    if (milliSec === 200) {
         sec++;
         milliSec = 0;
         seconds.innerHTML = '0' + sec;
