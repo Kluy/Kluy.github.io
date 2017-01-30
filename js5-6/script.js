@@ -51,47 +51,12 @@ body.appendChild(clearButton);
 startButton.addEventListener('click', timerStart);
 clearButton.addEventListener('click', clearTimer);
 
+var milliSec = 0, sec = 0, min = 0, hour = 0;
+
 function timerStart() {
     startButton.innerHTML = 'Pause';
     startButton.style.backgroundColor = 'blue';
-    timer = setInterval(start, 0);
-
-    milliSec = 0;
-    sec = 0;
-    hiddenSec = 0;
-    min = 0;
-    hiddenMin = 0;
-    hour = 0;
-
-    function start() {
-        milliSec++;
-        milliSeconds.innerHTML = milliSec;
-        if (milliSec === 250) {
-            sec++;
-            hiddenSec++;
-            milliSec = 0;
-            seconds.innerHTML = '0' + sec;
-        } if (sec > 9) {
-            seconds.innerHTML = sec;
-        } if (sec === 59) {
-            sec = 0 - 1;
-        } if (hiddenSec === 60) {
-            hiddenSec = 0;
-            min++;
-            hiddenMin++;
-            minutes.innerHTML = '0' + min;
-        } if (min > 9) {
-            minutes.innerHTML = min;
-        } if (min === 59) {
-            min = 0 - 1;
-        } if (hiddenMin === 60) {
-            hiddenMin = 0;
-            hour++;
-            hours.innerHTML = '0' + hour;
-        } if (hour > 9) {
-            hours.innerHTML = hour;
-        }
-    }
+    timer = setInterval(start, 1);
     startButton.removeEventListener('click', timerStart);
     startButton.addEventListener('click', pauseTimer);
 }
@@ -100,45 +65,34 @@ function pauseTimer() {
     clearInterval(timer);
     startButton.innerHTML = 'Cont...';
     startButton.style.backgroundColor = 'green';
-    startButton.addEventListener('click', timerContinue);
+    startButton.removeEventListener('click', pauseTimer);
+    startButton.addEventListener('click', timerStart);
 }
 
-function timerContinue() {
-    startButton.innerHTML = 'Pause';
-    startButton.style.backgroundColor = 'blue';
-    timer = setInterval(start, 0);
-
-    function start() {
-        milliSec++;
-        milliSeconds.innerHTML = milliSec;
-        if (milliSec === 1) {
-            sec++;
-            hiddenSec++;
-            milliSec = 0;
-            seconds.innerHTML = '0' + sec;
-        } if (sec > 9) {
-            seconds.innerHTML = sec;
-        } if (sec === 59) {
-            sec = 0 - 1;
-        } if (hiddenSec === 60) {
-            hiddenSec = 0;
-            min++;
-            hiddenMin++;
-            minutes.innerHTML = '0' + min;
-        } if (min > 9) {
-            minutes.innerHTML = min;
-        } if (min === 59) {
-            min = 0 - 1;
-        } if (hiddenMin === 60) {
-            hiddenMin = 0;
-            hour++;
-            hours.innerHTML = '0' + hour;
-        } if (hour > 9) {
-            hours.innerHTML = hour;
-        }
+function start() {
+    milliSec++;
+    milliSeconds.innerHTML = milliSec;
+    if (milliSec === 1) {
+        sec++;
+        milliSec = 0;
+        seconds.innerHTML = '0' + sec;
+    } if (sec > 9) {
+        seconds.innerHTML = sec;
+    } if (sec === 60) {
+        seconds.innerHTML = '00';
+        sec = 0;
+        min++;
+        minutes.innerHTML = '0' + min;
+    } if (min > 9) {
+        minutes.innerHTML = min;
+    } if (min === 60) {
+        minutes.innerHTML = '00';
+        min = 0;
+        hour++;
+        hours.innerHTML = '0' + hour;
+    } if (hour > 9) {
+        hours.innerHTML = hour;
     }
-    startButton.removeEventListener('click', timerContinue);
-    startButton.addEventListener('click', pauseTimer);
 }
 
 function clearTimer() {
@@ -149,7 +103,7 @@ function clearTimer() {
     seconds.innerHTML = '00';
     minutes.innerHTML = '00';
     hours.innerHTML = '00';
-    startButton.removeEventListener('click', timerContinue);
+    milliSec = 0, sec = 0, min = 0, hour = 0;
     startButton.removeEventListener('click', pauseTimer);
     startButton.addEventListener('click', timerStart);
 }
