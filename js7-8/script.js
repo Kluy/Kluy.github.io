@@ -3,18 +3,29 @@
  */
 
 $(function form () {
-    $('.header').on('click',function () {
-        $('.header')
+    var $header = $('.header');
+
+    $header.on('click',function () {
+        $header
             .css({
                 backgroundColor: 'gainsboro',
                 borderColor: 'gray',
                 cursor: 'pointer'});
 
+        $header.hover(
+            function() {
+                $(this).css('backgroundColor','#ececec');
+            }, function() {
+                $(this).css('backgroundColor','gainsboro');
+            }
+        );
+
         $(this)
             .css({
                 backgroundColor:'#79abfc',
                 borderColor: '#4f92ff',
-                cursor: 'text'});
+                cursor: 'text'})
+            .off('mouseenter mouseleave');
 
         var $text = $(this).siblings('.par');
         $('div.par').hide();
