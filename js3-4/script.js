@@ -2,6 +2,7 @@
  * Created by TERM2 on 13.01.2017.
  */
 
+
 var body = document.querySelector('body');
 
 var wrapper = document.createElement('div');

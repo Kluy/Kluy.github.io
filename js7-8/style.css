@@ -1,0 +1,82 @@
+.tabs{
+    border-radius: 4px;
+    border: 1px solid gray;
+    padding: 2px;
+    height: 230px;
+    width: 700px;
+    overflow: scroll;
+    position: relative;
+}
+.header__background{
+    background-color: lightgrey;
+    padding: 5px 5px 0 5px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    margin: 0;
+    display: block;
+    position: absolute;
+    height: 30px;
+    width: 670px;
+}
+.header{
+    display: inline-block;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 2px 2px 0 0;
+    background-color: gainsboro;
+    color: black;
+    cursor: pointer;
+}
+.h1{
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    background-color: #79abfc;
+    border: 1px solid #4f92ff;
+}
+.h2{
+    position: absolute;
+    left: 128px;
+    top: 9px;
+}
+.h3{
+    position: absolute;
+    left: 224px;
+    top: 9px;
+}
+.header:active{
+    border: 1px solid #52abcb;
+}
+.par{
+    position: absolute;
+    top: 50px;
+    width: 660px;
+    padding-left: 20px;
+}
+.par1{
+    display: none;
+}
+fieldset{
+    margin-top: 20px;
+    width: 550px;
+}
+label{
+    width: 64px;
+    display: inline-block;
+    line-height: 40px;
+}
+input{
+    margin-left: 15px;
+}
+.input{
+    border: 1px solid gray;
+    box-shadow: 0 0 5px black;
+    padding: 4px;
+    border-radius: 2px;
+    margin: 4px;
+    width: 200px;
+    display: none;
+}
+button{
+    margin-top: 4px;
+}
