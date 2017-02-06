@@ -20,22 +20,30 @@
 }
 .header{
     display: inline-block;
-    border: 1px solid gray;
     padding: 5px;
     border-radius: 2px 2px 0 0;
-    background-color: gainsboro;
     color: black;
+}
+.unactive{
+    border: 1px solid gray;
+    background-color: gainsboro;
     cursor: pointer;
 }
 .active{
     border: 1px solid #4f92ff;
+    background-color: #79abfc;
+    cursor: text;
+}
+.act:active{
+    border: 1px solid #52abcb;
+}
+.hover:hover{
+    background-color: #ececec;
 }
 .h1{
     position: absolute;
     top: 9px;
     left: 8px;
-    background-color: #79abfc;
-    border: 1px solid #4f92ff;
 }
 .h2{
     position: absolute;
@@ -47,9 +55,6 @@
     left: 224px;
     top: 9px;
 }
-/*.header:active{*/
-    /*border: 1px solid #52abcb;*/
-/*}*/
 .par{
     position: absolute;
     top: 50px;
@@ -79,6 +84,9 @@ input{
     margin: 4px;
     width: 200px;
     display: none;
+}
+.inline{
+    display: inline-block;
 }
 button{
     margin-top: 4px;

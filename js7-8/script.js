@@ -1,5 +1,5 @@
 /**
- * Created by TERM2 on 31.01.2017.
+ * Created by TERM2 on 19.01.2017.
  */
 
 $(function () {
@@ -8,48 +8,28 @@ $(function () {
         .on('click',function () {
             $('.header')
                 .removeClass('active')
-                .removeClass('red')
-                .css({
-                    backgroundColor: 'gainsboro',
-                    borderColor: 'gray',
-                    cursor: 'pointer'})
-                .hover(
-                    function() {
-                        $(this).css('backgroundColor','#ececec');
-                    }, function() {
-                        $(this).css('backgroundColor','gainsboro');
-                    });
+                .addClass('unactive')
+                .addClass('hover')
+                .addClass('act');
             $(this)
-                .css({
-                    backgroundColor:'#79abfc',
-                    borderColor: '#4f92ff',
-                    cursor: 'text'})
-                .off('mouseenter mouseleave')
-                .off('mousedown')
-                .addClass('red')
+                .removeClass('unactive')
+                .removeClass('hover')
+                .removeClass('act')
+                .addClass('active');
             $('div.par').hide();
             $(this).siblings('.par').show();
-        })
-        .mousedown(function() {
-            $('.header:not(.red)').css('border','1px solid gray');
-            $(this).css('border','1px solid #52abcb');
-            $('.active').css('border','1px solid #4f92ff');
         })
 });
 
 $(function () {
 
     $('input').hover(function () {
-        $(this)
-            .siblings('.input')
-            .css('display','inline-block')
+        $(this).siblings('.input').addClass('inline')
     },  function () {
-        $(this)
-            .siblings('.input')
-            .css('display','none')
+        $(this).siblings('.input').removeClass('inline')
     });
 
     $('button').on('click', function () {
-        $('.input').css({display: 'inline-block'})
+        $('.input').addClass('inline')
     });
 });
