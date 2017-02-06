@@ -27,6 +27,9 @@
     color: black;
     cursor: pointer;
 }
+.active{
+    border: 1px solid #4f92ff;
+}
 .h1{
     position: absolute;
     top: 9px;
@@ -44,9 +47,9 @@
     left: 224px;
     top: 9px;
 }
-.header:active{
-    border: 1px solid #52abcb;
-}
+/*.header:active{*/
+    /*border: 1px solid #52abcb;*/
+/*}*/
 .par{
     position: absolute;
     top: 50px;
