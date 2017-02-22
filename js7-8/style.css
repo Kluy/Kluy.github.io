@@ -76,7 +76,7 @@ label{
 input{
     margin-left: 15px;
 }
-.input{
+.tooltips{
     border: 1px solid gray;
     box-shadow: 0 0 5px black;
     padding: 4px;

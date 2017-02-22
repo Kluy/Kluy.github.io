@@ -24,12 +24,33 @@ $(function () {
 $(function () {
 
     $('input').hover(function () {
-        $(this).siblings('.input').addClass('inline')
+        $(this).siblings('.tooltips').addClass('inline')
     },  function () {
-        $(this).siblings('.input').removeClass('inline')
+        $(this).siblings('.tooltips').removeClass('inline')
     });
 
     $('button').on('click', function () {
-        $('.input').addClass('inline')
+        $('.tooltips').addClass('inline')
     });
 });
+
+// $(function () {
+//
+//     $('input').hover(function (event) {
+//         event.preventDefault();
+//         var $a = $(this).attr('title');
+//         $(this).parent().append('<p>$a</p>');
+//     },  function () {
+//         $(this).siblings('.input').removeClass('inline')
+//     });
+//
+//     $('button').on('click', function (e) {
+//         var $a = $('input').prop('title');
+//         e.preventDefault();
+//         $('fieldset div').append($a);
+//
+//         console.log($a);
+//         // $a.insertAfter('input');
+//         // $('.input').addClass('inline')
+//     });
+// });

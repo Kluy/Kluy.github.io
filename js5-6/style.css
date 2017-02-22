@@ -33,7 +33,6 @@ div{
     font-size: 200px;
     width: auto;
 }
-
 .milliseconds{
     font-size: 45px;
     display: block;
@@ -41,7 +40,6 @@ div{
     width: 859px;
     margin-bottom: 8px;
 }
-
 .clear_button{
     background-color: red;
     margin-left: 350px;
