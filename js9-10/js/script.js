@@ -8,3 +8,15 @@
         });
     });
 })(jQuery);
+
+// $(function () {
+//     var $links = $('.menu a');
+//
+//     $links.hover(function () {
+//         $(this).siblings('ul').show();
+//     },  function () {
+//         $(this).siblings('ul').hide()
+//     });
+//
+// });
+//

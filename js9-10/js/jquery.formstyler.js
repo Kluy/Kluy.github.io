@@ -84,7 +84,7 @@
 			}
 
 			// checkbox
-			if (el.is(':checkbox')) {
+			if (el.is('.block')) {
 
 				var checkboxOutput = function() {
 

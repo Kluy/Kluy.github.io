@@ -3,54 +3,154 @@
     <head>
         <meta charset="utf-8">
         <title>js9-10_dz</title>
-
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/jcarousel.data-attributes.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/jquery.formstyler.css">
-        <script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
-        <script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
         <script type="text/javascript" src="js/jquery.formstyler.js"></script>
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
         <script type="text/javascript" src="js/jcarousel.data-attributes.js"></script>
-
-
     </head>
     <body>
-
-    <div class="jcarousel-wrapper">
-                <div data-jcarousel="true" data-wrap="circular" class="jcarousel">
-                    <ul>
-                        <li><img src="img/news20160930_01.JPG" width="600" height="400" alt=""></li>
-                        <li><img src="img/news20160930_02.JPG" width="600" height="400" alt=""></li>
-                        <li><img src="img/news20160930_03.JPG" width="600" height="400" alt=""></li>
-                        <li><img src="img/news20160930_04.JPG" width="600" height="400" alt=""></li>
-                        <li><img src="img/news20160930_05.JPG" width="600" height="400" alt=""></li>
-                        <li><img src="img/news20160930_06.JPG" width="600" height="400" alt=""></li>
+    <ul class="menu">
+        <li class="menu__item"><a href="#">Главная</a></li>
+        <li class="menu__item"><a href="#">Путешествие <img class="triangle" src="img/triangle.png" alt=""></a>
+            <ul class="submenu">
+                <li class="menu__item">
+                    <a href="#">Путешествие 1</a>
+                    <ul class="submenu2">
+                        <li class="menu__item"><a href="#">Путешествие 1</a></li>
+                        <li class="menu__item"><a href="#">Путешествие 2</a></li>
+                        <li class="menu__item"><a href="#">Путешествие 3</a></li>
+                        <li class="menu__item"><a href="#">Путешествие 4</a></li>
+                        <li class="menu__item"><a href="#">Путешествие 5</a></li>
                     </ul>
-                </div>
-
-                <a data-jcarousel-control="true" data-target="-=1" href="#" class="jcarousel-control-prev">&lsaquo;</a>
-                <a data-jcarousel-control="true" data-target="+=1" href="#" class="jcarousel-control-next">&rsaquo;</a>
-                     </div>
+                </li>
+                <li class="menu__item">
+                    <a href="#">Путешествие 2</a>
+                    <ul class="submenu2">
+                        <li><a href="#">Путешествие 1</a></li>
+                        <li><a href="#">Путешествие 2</a></li>
+                        <li><a href="#">Путешествие 3</a></li>
+                        <li><a href="#">Путешествие 4</a></li>
+                        <li><a href="#">Путешествие 5</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Путешествие 3</a>
+                    <ul class="submenu2">
+                        <li><a href="#">Путешествие 1</a></li>
+                        <li><a href="#">Путешествие 2</a></li>
+                        <li><a href="#">Путешествие 3</a></li>
+                        <li><a href="#">Путешествие 4</a></li>
+                        <li><a href="#">Путешествие 5</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Путешествие 4</a>
+                    <ul class="submenu2">
+                        <li><a href="#">Путешествие 1</a></li>
+                        <li><a href="#">Путешествие 2</a></li>
+                        <li><a href="#">Путешествие 3</a></li>
+                        <li><a href="#">Путешествие 4</a></li>
+                        <li><a href="#">Путешествие 5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Путешествие 5</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Услуги <img class="triangle" src="img/triangle.png" alt=""></a>
+            <ul class="submenu">
+                <li><a href="#">Услуги 1</a></li>
+                <li><a href="#">Услуги 2</a>
+                    <ul class="submenu2">
+                        <li><a href="#">Услуги 1</a></li>
+                        <li><a href="#">Услуги 2</a></li>
+                        <li><a href="#">Услуги 3</a></li>
+                        <li><a href="#">Услуги 4</a></li>
+                        <li><a href="#">Услуги 5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Услуги 3</a></li>
+                <li><a href="#">Услуги 4</a></li>
+                <li><a href="#">Услуги 5</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Партнерам <img class="triangle" src="img/triangle.png" alt=""></a>
+            <ul class="submenu">
+                <li><a href="#">Партнерам 1</a></li>
+                <li><a href="#">Партнерам 2</a>
+                    <ul class="submenu2">
+                        <li><a href="#">Партнерам 1</a></li>
+                        <li><a href="#">Партнерам 2</a></li>
+                        <li><a href="#">Партнерам 3</a></li>
+                        <li><a href="#">Партнерам 4</a></li>
+                        <li><a href="#">Партнерам 5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Партнерам 3</a></li>
+                <li><a href="#">Партнерам 4</a></li>
+                <li><a href="#">Партнерам 5</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Отзывы клиентов</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Контакты</a></li>
+    </ul>
+    <div class="jcarousel-wrapper">
+        <div data-jcarousel="true" data-wrap="circular" class="jcarousel">
+            <ul>
+                <li><img src="img/news20160930_01.JPG" width="600" height="400" alt=""></li>
+                <li><img src="img/news20160930_02.JPG" width="600" height="400" alt=""></li>
+                <li><img src="img/news20160930_03.JPG" width="600" height="400" alt=""></li>
+                <li><img src="img/news20160930_04.JPG" width="600" height="400" alt=""></li>
+                <li><img src="img/news20160930_05.JPG" width="600" height="400" alt=""></li>
+                <li><img src="img/news20160930_06.JPG" width="600" height="400" alt=""></li>
+            </ul>
+        </div>
+        <a data-jcarousel-control="true" data-target="-=1" href="#" class="jcarousel-control-prev">&lsaquo;</a>
+        <a data-jcarousel-control="true" data-target="+=1" href="#" class="jcarousel-control-next">&rsaquo;</a>
+    </div>
     <select>
-                <option>-- Выберите --</option>
-                <option>Пункт 1</option>
-                <option>Пункт 2</option>
-                <option>Пункт 3</option>
-                <option>Пункт 4</option>
-                <option>Пункт 5</option>
+        <option>-- Выберите --</option>
+        <option>Пункт 1</option>
+        <option>Пункт 2</option>
+        <option>Пункт 3</option>
+        <option>Пункт 4</option>
+        <option>Пункт 5</option>
     </select>
     <div class="box visible">
-        <h4>Чекбоксы</h4>
-
+        <h4>Чекбоксы плагин</h4>
         <div class="section lh">
-            <label class="block"><input type="checkbox"> чекбокс 1</label>
-            <label class="block"><input type="checkbox"> чекбокс 2</label>
-            <label class="block"><input type="checkbox"> чекбокс 3</label>
-            <label class="block"><input type="checkbox" disabled checked> неактивный чекбокс</label>
+            <label class="block"><input type="checkbox" class="block"> чекбокс 1</label>
+            <label class="block"><input type="checkbox" class="block"> чекбокс 2</label>
+            <label class="block"><input type="checkbox" class="block"> чекбокс 3</label>
+            <label class="block"><input type="checkbox" class="block" disabled checked> неактивный чекбокс</label>
         </div>
+    </div>
+    <div class="control-group">
+        <h1>Checkboxes CSS</h1>
+        <label class="control control--checkbox">First checkbox
+            <input type="checkbox" checked="checked"  >
+            <div class="control__indicator"></div>
+        </label>
+        <label class="control control--checkbox">Second checkbox
+            <input type="checkbox"  >
+            <div class="control__indicator"></div>
+        </label>
+        <label class="control control--checkbox">Disabled
+            <input type="checkbox" disabled="disabled"  >
+            <div class="control__indicator"></div>
+        </label>
+        <label class="control control--checkbox">Disabled & checked
+            <input type="checkbox" disabled="disabled" checked="checked">
+            <div class="control__indicator"></div>
+        </label>
     </div>
     </body>
 </html>
