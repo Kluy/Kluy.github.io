@@ -7,7 +7,11 @@ body{
     display: block;
     margin-top: 7px;
 }
-
+.inline-block{
+    display: inline-block;
+    padding: 0 40px;
+    vertical-align: top;
+}
 
 /*menu*/
 
@@ -37,47 +41,47 @@ body{
 }
 .submenu{
     width: 135px;
-    /*display: none;*/
+    display: none;
     position: absolute;
-    transform: translateY(-2em);
-    opacity: 0;
-    z-index: -1;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-
+    /*transform: translateY(-2em);*/
+    /*opacity: 0;*/
+    /*z-index: -1;*/
+    /*visibility: hidden;*/
+    /*transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;*/
     top: 29px;
     line-height: 24px;
     background-color: #323232;
 }
 .submenu2{
+    display: none;
     position: absolute;
-    transform: translateY(-2em);
-    opacity: 0;
-    z-index: -1;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;    position: absolute;
+    /*transform: translateY(-2em);*/
+    /*opacity: 0;*/
+    /*z-index: -1;*/
+    /*visibility: hidden;*/
+    /*transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;*/
     line-height: 24px;
     left: 135px;
     margin-top: -24px;
     width: 135px;
     background-color: #323232;
 }
-.menu li:hover .submenu{
-    /*display: block;*/
-    visibility: visible;
-    opacity: 1;
-    z-index: 1;
-    transform: translateY(0%);
-    transition-delay: 0s, 0s, 0.3s;
-}
-.submenu li:hover ul{
-    /*display: block;*/
-    visibility: visible;
-    opacity: 1;
-    z-index: 1;
-    transform: translateY(0%);
-    transition-delay: 0s, 0s, 0.3s;
-}
+/*.menu li:hover .submenu{*/
+    /*!*display: block;*!*/
+    /*visibility: visible;*/
+    /*opacity: 1;*/
+    /*z-index: 1;*/
+    /*transform: translateY(0%);*/
+    /*transition-delay: 0s, 0s, 0.3s;*/
+/*}*/
+/*.submenu li:hover ul{*/
+    /*!*display: block;*!*/
+    /*visibility: visible;*/
+    /*opacity: 1;*/
+    /*z-index: 1;*/
+    /*transform: translateY(0%);*/
+    /*transition-delay: 0s, 0s, 0.3s;*/
+/*}*/
 .menu a:hover{
     color: lightgreen;
     background-color: #0c3256;

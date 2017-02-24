@@ -9,14 +9,14 @@
     });
 })(jQuery);
 
-// $(function () {
-//     var $links = $('.menu a');
-//
-//     $links.hover(function () {
-//         $(this).siblings('ul').show();
-//     },  function () {
-//         $(this).siblings('ul').hide()
-//     });
-//
-// });
-//
+$(function () {
+    var $links = $('.menu li');
+
+    $links.hover(function () {
+        $(this).children('.submenu').show(200);
+        $(this).children('.submenu2').show(200);
+    },  function () {
+        $(this).children('.submenu').hide();
+        $(this).children('.submenu2').hide();
+    });
+});
