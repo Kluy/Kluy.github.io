@@ -1,0 +1,60 @@
+body{
+    background-color: beige;
+}
+.foto{
+    width: 200px;
+}
+.wrapper{
+    padding-left: 100px;
+}
+.carousel-main{
+    height: 150px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.carousel-wrapper{
+    position: absolute;
+    top: 5%;
+    left: 20%;
+}
+.carousel-hider {
+    width: 600px;
+    overflow: hidden;
+    float: left;
+}
+.carousel-list {
+    list-style: none;
+    width: 10000px;
+    padding: 0;
+    left: 0;
+    position: relative;
+}
+.carousel-element {
+    display: block;
+    margin-right: 25px;
+    float: left;
+}
+.carousel-element img {
+    max-width: 100px;
+}
+.carousel-arrow-left, .carousel-arrow-right {
+    float: left;
+}
+.carousel-arrow-left, .carousel-arrow-right {
+    float: left;
+    display: block;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    padding: 5px;
+    margin-top: 50px;
+}
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+.carousel-arrow-left {
+    margin-right: 25px;
+}
+.carousel-arrow-right {
+    margin-left: 25px;
+}
