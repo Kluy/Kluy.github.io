@@ -34,15 +34,15 @@
     </div>
 </div>
 
-<script type="text/tmpl" id="test">
+<script type="text/tmpl" id="profile">
     <div></div>
     <div class="wrapper">
-    <h1><%= data[0].header %></h1>
-    <img class="foto" src="<%= data[0].img %>">
-    <p><%= data[0].spec %></p>
-    <% for (i = 0; i < data.length; i++) { %>
-        <h3><%= data[i].title %></h3>
-        <p><%= data[i].content %></p>
+    <h1><%= profileData[0].header %></h1>
+    <img class="foto" src="<%= profileData[0].img %>">
+    <p><%= profileData[0].profesion %></p>
+    <% for (i = 0; i < profileData.length; i++) { %>
+        <h3><%= profileData[i].title %></h3>
+        <p><%= profileData[i].content %></p>
     <% } %>
     </div>
 </script>

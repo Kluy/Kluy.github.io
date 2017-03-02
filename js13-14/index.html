@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js13-14</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/tmpl.js"></script>
+
+</head>
+<body>
+
+<script type="text/tmpl" id="test">
+    <div></div>
+    <div class="wrapper">
+        <h1><%= data[0].header %></h1>
+        <form action="">
+            <% for (i = 1; i < data.length; i++) { %>
+                <h3><%= data[i].question %></h3>
+                    <% for (j = 0; j < data[i].answer.length; j++) { %>
+                    <label for="">
+                    <input type="radio" name="<%= data[i].question %>" id="">
+                        <%= data[i].answer[j] %>
+                    </label>
+                    <% } %>
+            <% } %>
+            <button><%= data[0].button %></button>
+        </form>
+    </div>
+</script>
+
+
+<!--<script type="text/html" id="item_tmpl">-->
+    <!--<% for ( var i = 0; i < data.length; i++ ) { %>-->
+    <!--<li id="<%=data[i].id%>" class='<%=(i % 2 == 1 ? " even" : " odd")%>'>-->
+    <!--<%=i+1%> <%=members[i].text%> (from <%=members[i].name%>[ID:<%=members[i].id%>])-->
+    <!--</li>-->
+    <!--<% } %>-->
+<!--</script>-->
+
+</body>
+</html>

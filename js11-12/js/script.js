@@ -8,16 +8,15 @@ $(function () {
 
 });
 
-
 $(function () {
 
-    var html = $("#test").html();
+   var html = $("#profile").html();
 
-    var ar =[
+   var profile =[
         {
             header: 'КЛЮЙ АНДРЕЙ СЕРГЕЕВИЧ',
             img: 'img/foto.jpg',
-            spec: 'Cпециалист'
+            profesion: 'Cпециалист'
         },
         {
             title: 'Хочу учить фронтенд, потому что:',
@@ -38,9 +37,39 @@ $(function () {
     ];
 
     var content = tmpl(html, {
-        data: ar
+        profileData: profile
     });
 
     $('body').append(content);
     
 });
+
+// var page = {
+//     author: {
+//         name: 'КЛЮЙ АНДРЕЙ СЕРГЕЕВИЧ',
+//         photo: 'img/foto.jpg',
+//         spec: 'Cпециалист'
+//     },
+//
+//     whyBlock :{
+//
+//         title: 'Хочу учить фронтенд, потому что:',
+//         content:'интересно'
+//     }
+//     ,
+//     contacts :{
+//         title: 'Мой контактный телефон:',
+//         tel: '+380'
+//     }
+//     ,
+//     social :{
+//         title: 'Мой профиль в контакте:',
+//         link: '<a href="http://vk.com">vk.com</a>'
+//     }
+//     ,
+//     feedback :{
+//         title: 'Мой фидбек:',
+//         message: 'Спасибо, Костя, ты настоящий друг!'
+//     }
+//
+// };
