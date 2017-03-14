@@ -41,30 +41,3 @@ $(function(){
         $leftButton.on('click',slideLeft)
     }
 });
-
-
-(function($){
-
-
-
-})(jQuery);
-
-
-// $(document).ready(function() {
-//
-//     var elementsList = $('.carousel-list');
-//
-//     var pixelsOffset = 125;
-//     var currentLeftValue = 0;
-//
-//     leftUIEl.click(function() {
-//         currentLeftValue += 125;
-//         elementsList.animate({ left : currentLeftValue + "px"}, 500);
-//     });
-//
-//     rightUIEl.click(function() {
-//         currentLeftValue -= 125;
-//         elementsList.animate({ left : currentLeftValue + "px"}, 500);
-//     });
-//
-// });

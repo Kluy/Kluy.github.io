@@ -1,7 +1,11 @@
 .wrapper{
    margin: 50px;
+   width: 250px;
 }
-button{
+label{
+    display: block;
+}
+.button{
     display: block;
     margin-top: 20px;
     margin-left: 220px;
@@ -10,7 +14,34 @@ button{
     border-radius: 2px;
     font-size: 16px;
     padding: 10px 40px;
+    width: 120px;
 }
-label{
-    display: block;
+.button:hover{
+    cursor: pointer;
+    background: white;
+}
+.modal {
+    position: fixed;
+    text-align: center;
+    background: white;
+    font-size: 36px;
+    width: 50%;
+    height: 400px;
+    top: 20%;
+    left: 25%;
+    border-radius: 3px;
+}
+.modal p {
+    padding-top: 145px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    -webkit-box-shadow: 10px 6px 49px 1px rgba(0,0,0,3);
+    -moz-box-shadow: 10px 6px 49px 1px rgba(0,0,0,3);
+    box-shadow: 10px 6px 49px 1px rgba(0,0,0,3);
 }

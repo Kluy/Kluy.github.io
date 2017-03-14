@@ -12,19 +12,17 @@
 <script type="text/tmpl" id="test">
     <div></div>
     <div class="wrapper">
-        <h1><%= data[0].header %></h1>
-        <form action="">
-            <% for (i = 1; i < data.length; i++) { %>
+        <h1>Programming test</h1>
+            <% for (i = 0; i < data.length; i++) { %>
                 <h3><%= data[i].question %></h3>
                     <% for (j = 0; j < data[i].answer.length; j++) { %>
-                    <label for="">
-                    <input type="radio" name="<%= data[i].question %>" id="">
+                    <label>
+                        <input class="radio" type="radio" name="<%= data[i].question %>" id="radio">
                         <%= data[i].answer[j] %>
                     </label>
                     <% } %>
             <% } %>
-            <button><%= data[0].button %></button>
-        </form>
+        <div class="button">Check my results</div>
     </div>
 </script>
 </body>
