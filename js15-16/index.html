@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js15-16</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/tmpl.js"></script>
+</head>
+<body>
+<form action="#">
+    <input type="text" id="text">
+    <button type="button" class="searchButton" value="">Search</button>
+</form>
+<script type="text/tmpl" id="test">
+    <div></div>
+    <div class="wrapper">
+        <h1>Search result</h1>
+        <% for (i = 0; i < hit.pageURL.length; i++) { %>
+                <div><%= hit.pageURL[i] %></div>
+            <% } %>
+        <div><%= titel  %></div>
+
+
+             </div>
+</script>
+
+
+
+
+</body>
+</html>

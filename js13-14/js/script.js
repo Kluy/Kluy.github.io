@@ -58,6 +58,8 @@ $(function () {
 
         var user = [];
 
+        var j;
+
         for (j = 0; j < question.length; j++) {
 
             var radios = document.getElementsByName("Question №"+[j+1]);
@@ -80,6 +82,8 @@ $(function () {
             }
         }
 
+        console.log(user);
+
         var result = 0;
 
         for (var i = 0; i < user.length; i++) {
@@ -100,7 +104,6 @@ $(function () {
     }
 
     function hideModal(){
-
         $('.radio').prop('checked', false);
         $modal.remove();
         $overlay.remove();

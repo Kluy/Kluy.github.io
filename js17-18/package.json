@@ -1,0 +1,19 @@
+{
+  "name": "js17-18",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1"
+  },
+  "devDependencies": {
+    "gulp-uglify": "^2.1.2",
+    "gulp-uglifycss": "^1.0.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
