@@ -2,40 +2,59 @@
  * Created by TERM2 on 15.03.2017.
  */
 
+'use strict';
+
 $(function () {
 
-    var html = $("#test").html();
+    var question = $('<input type="text" id="question">');
 
-    $('button').on('click', search);
+    var body = $('body');
 
-    function search (){
+    body.append($('<div>Введите вопрос:</div>'))
+             .append(question)
+             .append($('<div>Введите варианты ответов:</div>'));
 
-        var keyWord = document.getElementById('text').value;
-
-        var API_KEY = '4870172-a6cd6d722569b9e8587abde34';
-        var URL = "https://pixabay.com/api/?key=" + API_KEY + "&q=" + encodeURIComponent(keyWord);
-        $.getJSON(URL, function (data) {
-            if (parseInt(data.totalHits) > 0)
-                $.each(data.hits, function (i, hit) {
-
-                    // ddd = hit.pageURL;
-
-                    console.log(hit.pageURL);
-
-
-                });
-            else
-                console.log('No hits');
-        });
+    for (var i = 1; i < 4; i++) {
+        var answer = $('<input type="text">').appendTo('body');
+        answer.attr('id', 'answer' + i);
     }
 
-    // var data = {
-    //     titel: 'ddd'
-    // };
+    var rightAnswer = $('<input type="text" id="rightAnswer">');
 
-    var content = tmpl(html, {
-        titel: 'sfsdf'
-    });
+    var button = $('<button class="saveButton">Сохранить</button>');
 
-    $('body').append(content);
+    body.append($('<div>Введите правильный вариант ответа:</div>'))
+             .append(rightAnswer)
+             .append(button);
+
+    button.on('click', save);
+
+    var questionsList = [];
+
+    function save() {
+
+        function Test(questionArg,answersArg, rightAnswerArg) {
+            this.question = questionArg;
+            this.answer = answersArg;
+            this.rightAnswer = rightAnswerArg;
+        }
+
+        var answers = [];
+        for (var i = 1; i < 4; i++) {
+            answers.push($('#answer' + i).val());
+        }
+
+        var newQuestion = new Test($('#question').val(), answers, $('#rightAnswer').val());
+
+        questionsList.push(newQuestion);
+
+        var questionsListSave = JSON.stringify(questionsList);
+        localStorage.setItem('test', questionsListSave);
+
+        var testFromStorage = localStorage.getItem('test');
+        var testFromStorageObj = JSON.parse(testFromStorage);
+
+        console.log('testFromStorageObj', testFromStorageObj);
+        console.log('testFromStorageObj', testFromStorageObj[2]);
+    }
 });

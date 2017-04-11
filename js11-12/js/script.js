@@ -35,41 +35,10 @@ $(function () {
             content: 'Спасибо, Костя, ты настоящий друг!'
         }
     ];
-
+    
     var content = tmpl(html, {
         profileData: profile
     });
 
     $('body').append(content);
-    
 });
-
-// var page = {
-//     author: {
-//         name: 'КЛЮЙ АНДРЕЙ СЕРГЕЕВИЧ',
-//         photo: 'img/foto.jpg',
-//         spec: 'Cпециалист'
-//     },
-//
-//     whyBlock :{
-//
-//         title: 'Хочу учить фронтенд, потому что:',
-//         content:'интересно'
-//     }
-//     ,
-//     contacts :{
-//         title: 'Мой контактный телефон:',
-//         tel: '+380'
-//     }
-//     ,
-//     social :{
-//         title: 'Мой профиль в контакте:',
-//         link: '<a href="http://vk.com">vk.com</a>'
-//     }
-//     ,
-//     feedback :{
-//         title: 'Мой фидбек:',
-//         message: 'Спасибо, Костя, ты настоящий друг!'
-//     }
-//
-// };
