@@ -53,6 +53,7 @@ $(function () {
     }
 });
 
+
 $(function () {
     var button = $('<button class="searchButton">Поиск</button>');
     $('body').append($('<div>Введите поисковый запрос:</div>'))
