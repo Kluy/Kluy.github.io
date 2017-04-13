@@ -5,9 +5,7 @@
 'use strict';
 
 $(function () {
-
     var question = $('<input type="text" id="question">');
-
     var body = $('body');
 
     body.append($('<div>Введите вопрос:</div>'))
@@ -20,7 +18,6 @@ $(function () {
     }
 
     var rightAnswer = $('<input type="text" id="rightAnswer">');
-
     var button = $('<button class="saveButton">Сохранить</button>');
 
     body.append($('<div>Введите правильный вариант ответа:</div>'))
@@ -29,10 +26,9 @@ $(function () {
 
     button.on('click', save);
 
-    var questionsList = [];
+    var questionList = [];
 
     function save() {
-
         function Test(questionArg,answersArg, rightAnswerArg) {
             this.question = questionArg;
             this.answer = answersArg;
@@ -40,27 +36,16 @@ $(function () {
         }
 
         var answers = [];
+
         for (var i = 1; i < 4; i++) {
             answers.push($('#answer' + i).val());
         }
 
         var newQuestion = new Test($('#question').val(), answers, $('#rightAnswer').val());
-
-        console.log('newQuestion', newQuestion);
-
-
-        questionsList.push(newQuestion);
-
-        var questionsListSave = JSON.stringify(questionsList);
-
-        console.log('questionsListSave', questionsListSave);
-
-        localStorage.setItem('test', questionsListSave);
-
+        questionList.push(newQuestion);
+        var questionListSave = JSON.stringify(questionList);
+        localStorage.setItem('test', questionListSave);
         var testFromStorage = localStorage.getItem('test');
-
-        console.log('testFromStorage', testFromStorage);
-
         var testFromStorageObj = JSON.parse(testFromStorage);
 
         console.log('testFromStorageObj', testFromStorageObj);
@@ -68,36 +53,32 @@ $(function () {
     }
 });
 
-// $(function () {
-//
-//     var button = $('<button class="searchButton">Поиск</button>');
-//
-//     $('body').append($('<div>Введите поисковый запрос:</div>'))
-//              .append($('<input type="text" id="search">'))
-//              .append(button);
-//
-//     $('.searchButton').on('click', search);
-//
-//     function search (){
-//
-//         // var keyWord = document.getElementById('text').value;
-//         var keyWord = $('#search').val();
-//         var api_key = '4870172-a6cd6d722569b9e8587abde34';
-//         var url = "https://pixabay.com/api/?key=" + api_key + "&q=" + keyWord;
-//
-//         // var url = "https://api.tenor.co/v1/search?key=LIVDSRZULELA&tag=goodluck";
-//         $.ajax({
-//             url: url,
-//             success: function(data){
-//                 // var context = data;
-//                 console.log('data', data);
-//                 var img = $('<img src="" alt="">').appendTo('body');
-//                     img.attr('src', data.hits[1].previewURL);
-//                 // $('body').append('<img src="" alt="">');
-//                 // $('img').append(data.results[1].url);
-//                 console.log('data:url', data.hits[1].previewURL);
-//                 console.log('data:obj', data.hits);
-//             }
-//         });
-//     };
-// });
+$(function () {
+    var button = $('<button class="searchButton">Поиск</button>');
+    $('body').append($('<div>Введите поисковый запрос:</div>'))
+             .append($('<input type="text" id="search">'))
+             .append(button);
+    $('.searchButton').on('click', search);
+    function search (){
+        $('a').remove();
+        var keyWord = $('#search').val();
+        var url = "https://pixabay.com/api/?key=4870172-a6cd6d722569b9e8587abde34&q=" + keyWord;
+        $.ajax({
+            url: url,
+            success: function(data){
+
+                for (var i = 0; i < data.hits.length; i++) {
+                    var href = $('<a href=""></a>');
+                        href.appendTo('body')
+                            .attr('href', data.hits[i].pageURL);
+                    var img = $('<img src="" alt="">');
+                        href.append(img);
+                        img.attr('src', data.hits[i].previewURL);
+                }
+            },
+            error: function () {
+                alert("error")
+            }
+        });
+    }
+});
