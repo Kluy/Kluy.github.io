@@ -7,4 +7,4 @@ $('a.fancybox').fancybox({
 
 });
 
-new WOW().init();
+// new WOW().init();
