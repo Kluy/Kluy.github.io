@@ -9,7 +9,7 @@ $(function () {
         offset: -10
         });
 
-    // WOW.init();
+    WOW.init();
 
     //CAROUSEL ANIMATION
 
