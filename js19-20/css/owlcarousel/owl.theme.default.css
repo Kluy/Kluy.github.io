@@ -11,7 +11,7 @@
   display: inline-block;
   position: relative;
 }
-.active:after{
+.owl-dot.active span{
   content: "";
   width: 9px;
   height: 9px;
