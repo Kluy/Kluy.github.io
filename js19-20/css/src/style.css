@@ -117,7 +117,7 @@ input[type="text"] {
   position: relative;
 }
 .slogan{
-  background-image: url("../img/slogan.png");
+  background-image: url("../../img/slogan.png");
   background-repeat: no-repeat;
   text-transform: uppercase;
   padding: 17px 36px 27px 25px;
