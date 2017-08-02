@@ -8,7 +8,7 @@ $(function () {
         animateClass: 'animated',
         offset: -10
         });
-
+    
     //CAROUSEL ANIMATION
 
     $('.owl-carousel').owlCarousel({

@@ -2,21 +2,6 @@
  * Created by TERM2 on 19.05.2017.
  */
 
-// var gulp = require('gulp');
-// var sass = require('gulp-sass');
-//
-// gulp.task('sass', function () {
-//     return gulp.src('css/src/*.scss')
-//         .pipe(sass().on('error', sass.logError))
-//         .pipe(gulp.dest('css'));
-// });
-//
-// // gulp.task('sass:watch', function () {
-// //     gulp.watch('./sass/**/*.scss', ['sass']);
-// // });
-//
-// gulp.task('default', [ 'sass' ]);
-
 var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
@@ -43,4 +28,4 @@ gulp.task('concat:css', function() {
         .pipe(gulp.dest('css'));
 });
 
-gulp.task('default', [ 'concat', 'concat:css', 'concat:main' ]);
+gulp.task('default', [ 'concat', 'concat:main', 'concat:css' ]);
