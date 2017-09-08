@@ -46,11 +46,12 @@
         localStorage.setItem('test', programmingTest);
         var testFromStorage = localStorage.getItem('test');
         var testFromStorageObj = JSON.parse(testFromStorage);
+        
         var content = tmpl(html, {
             data: testFromStorageObj
         });
 
-        $('body').append(content);
+        jQuery('body').append(content);
 
         function check() {
             var user = [];
