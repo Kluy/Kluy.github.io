@@ -31,16 +31,9 @@ define(
         }
     }
 
-        $(function () {
+    
 
-            var firstList = ['learn javascript', 'learn html', 'learn css'];
-            var model = new Model(firstList);
-            var view = new View(model);
-            var controller = new Controller(model, view);
-
-        });
-
-        return {};
+        return Controller;
     }
 );
 // $(function () {

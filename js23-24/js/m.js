@@ -35,7 +35,7 @@ define(
             return self.data;
         };
     }
-        return {};
+        return Model;
     }
 );
 //

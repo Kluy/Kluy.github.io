@@ -8,12 +8,24 @@ require(
         'v',
         'c'
     ],
-    function (m, v, c) {
-        console.log('model', m);
-        console.log('view', v);
-        console.log('controller', c);
+    function (Model, View, Controller) {
+
+        $(function () {
+
+            var firstList = ['learn javascript', 'learn html', 'learn css'];
+            var model = new Model(firstList);
+            var view = new View(model);
+            var controller = new Controller(model, view);
+
+        });
+        // console.log('model', m);
+        // console.log('view', v);
+        // console.log('controller', c);
     }
 );
+
+
+
 
 // function Model(data) {
 //     var self = this;

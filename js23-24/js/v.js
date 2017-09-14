@@ -32,6 +32,6 @@ define(
         init();
     }
 
-        return {};
+        return View;
     }
 );
