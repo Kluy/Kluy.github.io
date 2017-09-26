@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js13-14</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/build/script.js"></script>
+    <script type="text/javascript" src="js/src/tmpl.js"></script>
+</head>
+<body>
+<script type="text/tmpl" id="test">
+    <div></div>
+    <div class="wrapper">
+        <h1>Programming test</h1>
+            <% for (i = 0; i < data.length; i++) { %>
+                <h3><%= data[i].question %></h3>
+                    <% for (j = 0; j < data[i].answer.length; j++) { %>
+                    <label>
+                        <input class="radio" type="radio" name="<%= data[i].question %>" id="radio">
+                        <%= data[i].answer[j] %>
+                    </label>
+                    <% } %>
+            <% } %>
+        <div class="button">Check my results</div>
+    </div>
+</script>
+</body>
+</html>

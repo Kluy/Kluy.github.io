@@ -103,7 +103,7 @@ function clearTimer() {
     seconds.innerHTML = '00';
     minutes.innerHTML = '00';
     hours.innerHTML = '00';
-    milliSec = 0, sec = 0, min = 0, hour = 0;
+    milliSec = 0; sec = 0; min = 0; hour = 0;
     startButton.removeEventListener('click', pauseTimer);
     startButton.addEventListener('click', timerStart);
 }
