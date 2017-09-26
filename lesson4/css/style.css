@@ -57,6 +57,7 @@ body{
 .content{
     position: relative;
     color: #424c43;
+    overflow: hidden;
 }
 .foto{
     border-top: 1px solid #128aa7;
