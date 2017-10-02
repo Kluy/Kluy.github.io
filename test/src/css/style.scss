@@ -3,13 +3,13 @@ $red: #ff4e50;
 $white: white;
 $roboto: Roboto;
 
-
 .clearfix:after{
+  display: block;
   content: '';
   clear: both;
   overflow: hidden;
-  display: block;
 }
+
 body{
   text-align: center;
   font-family: 'Montserrat',  Arial, Tahoma, sans-serif;
@@ -74,9 +74,8 @@ h1{
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 40px;
+  line-height: 30px;
   padding-top: 40px;
-  //width: 500px;
 }
 .slogan-2{
   font-size: 18px;
@@ -100,16 +99,13 @@ h1{
     border-radius: 3px;
     background-position: center;
     width: 300px;
-    height: 400px;
-    float: left;
+    height: 240px;
     display: flex;
     align-items: flex-end;
     .slider__content{
       padding: 40px 20px 20px 20px;
       text-align: left;
       vertical-align: bottom;
-
-
     }
     a{
       font-size: 10px;
@@ -149,6 +145,7 @@ h1{
     padding-bottom: 45px;
     .partner__item{
       font-size: 14px;
+      padding: 0 50px;
       img{
         margin-top: 30px;
         border-radius: 100%;
@@ -165,20 +162,19 @@ h1{
     }
   }
 }
-.clearfix:after{
-  display: block;
-  content: '';
-  clear: both;
-}
 
-.grid-item {
-  padding: 10px;
-  img{
-    width: 280px;
-    border-radius: 3px;
+.grid{
+  padding-top: 25px;
+  .grid-item {
+    img{
+      width: 300px;
+      //height: 280px;
+      border-radius: 3px;
+      margin: 10px;
+    }
   }
 }
-//.grid-item--width2 { width: 400px; }
+
 
 h4{
   font-size: 18px;
@@ -232,9 +228,6 @@ footer{
   }
 }
 
-
-
-
 //button{
 //  border: none;
 //  border-radius: 12px;
@@ -246,23 +239,9 @@ footer{
 //  background-color: white;
 //}
 
-
-
-
 /*--MEDIA QUERIES--*/
 
-@media (max-width: 1440px){
-
-  //.slogan{
-  //  font-size: 52px;
-  //}
-//  .wrapper{
-//    margin: 0 auto;
-//    width: 1440px;
-//  }
-}
-
-@media (max-width: 768px){
+@media (min-width: 768px){
 
   .wrapper{
     //margin: 0 auto;
@@ -271,48 +250,125 @@ footer{
   .section-wrapper{
     //margin: 0 auto;
     width: 768px;
+  }
+  nav{
+    padding-bottom: 0;
+    float: right;
+  }
+  .log-in__block{
+    padding-bottom: 150px;
+    h1{
+      float: left;
+      padding-top: 0;
+    }
   }
   .slogan{
     font-size: 52px;
+    line-height: 54px;
+    width: 75%;
   }
   .slider{
     padding-top: 20px;
     .slider__item{
+      height: 400px;
       width: 236px;
+      float: left;
     }
   }
-
+  .partner{
+    .partner__container{
+      padding-left: 10%;
+      .partner__item{
+        float: left;
+        font-size: 14px;
+        p{
+          width: 200px;
+        }
+      }
+    }
+  }
+  .grid{
+    .grid-item {
+      img{
+        width: auto;
+        height: 180px;
+      }
+    }
+  }
 }
-
-@media (max-width: 320px){
+@media (min-width: 940px){
 
   .wrapper{
     //margin: 0 auto;
-    width: 320px;
+    width: 940px;
   }
   .section-wrapper{
     //margin: 0 auto;
-    width: 320px;
-  }
-  header{
-    padding: 38px 0 234px 0;
+    width: 940px;
   }
   .slogan{
-    font-size: 30px;
-    line-height: 35px;
-    width: 90%;
-  }
-  .slogan-2{
-    font-size: 18px;
+    font-size: 52px;
+    line-height: 63px;
+    width: 60%;
   }
   .slider{
     padding-top: 20px;
     .slider__item{
-      height: 240px;
       width: 300px;
     }
   }
-  .partners{
-    padding-left: 20px;
+  .partner{
+    .partner__container{
+      padding-left: 0;
+      .partner__item{
+        padding: 0 15px;
+
+        //float: left;
+        //font-size: 14px;
+        p{
+          width: 200px;
+        }
+      }
+    }
   }
 }
+
+
+//@media (min-width: 320px){
+//
+//  .wrapper{
+//    //margin: 0 auto;
+//    width: 320px;
+//  }
+//  .section-wrapper{
+//    //margin: 0 auto;
+//    width: 320px;
+//  }
+//  header{
+//    padding: 38px 0 234px 0;
+//  }
+//  .slogan{
+//    font-size: 30px;
+//    line-height: 35px;
+//    width: 90%;
+//  }
+//  .slogan-2{
+//    font-size: 18px;
+//  }
+//  .slider{
+//    padding-top: 20px;
+//    .slider__item{
+//      height: 240px;
+//      width: 300px;
+//    }
+//  }
+//  .partner{
+//    .partner__container{
+//      .partner__item{
+//        width: 70%;
+//        font-size: 14px;
+//        padding: 0 50px;
+//      }
+//    }
+//  }
+//}
