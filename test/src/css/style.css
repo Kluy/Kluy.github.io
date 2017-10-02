@@ -30,11 +30,11 @@ header {
 
 .wrapper {
   margin: 0 auto;
-  width: 940px; }
+  width: 320px; }
 
 .section-wrapper {
   margin: 0 auto;
-  width: 940px; }
+  width: 320px; }
 
 nav {
   padding-bottom: 47px; }
@@ -53,20 +53,20 @@ nav {
 h1 {
   font-size: 20px;
   font-weight: bold;
+  padding-top: 50px;
   text-transform: uppercase; }
 
 .slogan {
   margin: 0 auto;
-  font-size: 52px;
+  font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 65px;
-  padding-top: 40px;
-  width: 500px; }
+  line-height: 40px;
+  padding-top: 40px; }
 
 .slogan-2 {
   font-size: 18px;
-  line-height: 100px;
+  padding: 15px 0 30px 0;
   font-family: Roboto; }
 
 .button {
