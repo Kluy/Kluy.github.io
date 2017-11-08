@@ -184,7 +184,7 @@ var Add = React.createClass({
                 <label className='add__checkrule'>
                     <input type='checkbox' ref='checkrule' onChange={this.onCheckRuleClick}/>Я согласен с правилами </label>
                 <button className='add-button' onClick={this.onBtnClickHandler} ref='alert_button' className='button'
-                        disabled={this.state.agreeNotChecked || this.state.authorIsEmpty || this.state.textIsEmpty}>Показать алерт</button>
+                        disabled={this.state.agreeNotChecked || this.state.authorIsEmpty || this.state.textIsEmpty}>Добавить новость</button>
             </form>
         );
     }

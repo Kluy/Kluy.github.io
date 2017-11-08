@@ -286,6 +286,9 @@ footer{
         }
       }
     }
+    .hidden{
+      display: none;
+    }
   }
   .grid{
     .grid-item {
@@ -296,6 +299,7 @@ footer{
     }
   }
 }
+
 @media (min-width: 940px){
 
   .wrapper{

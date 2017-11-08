@@ -41,4 +41,7 @@ $(function () {
     });
 
     $('body').append(content);
+    console.log("Result of getPeople arr", profile[0].header);
+
+
 });

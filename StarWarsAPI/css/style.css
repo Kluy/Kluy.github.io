@@ -1,0 +1,120 @@
+.q{
+    border: 1px solid red;
+}
+.a{
+    float: left;
+
+}
+body {
+    font-family: Arial, Tahoma, sans-serif;
+    background-color: #e4d1e4;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.wrapper{
+    background-color: #dec6de;
+    width: 800px;
+    margin: 40px auto;
+    color: #8c3e8a;
+}
+.logo-wrapper{
+    padding: 15px 25px 10px 15px;
+    font-weight: bold;
+
+}
+.logo{
+    float: left;
+    width: 200px;
+    height: 80px;
+    font-size: 35px;
+    font-style: italic;
+    background-size: contain;
+    background-image: url("../img/star_wars_logo.png");
+
+}
+.headline{
+    display: flex;
+    align-items: flex-end;
+    float: right;
+    height: 80px;
+    padding-top: 6px;
+}
+nav {
+    border: 3px solid #8b2b8d;
+    line-height: 40px;
+    background-color: #ad73ad;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 0 12px;
+}
+a {
+    text-decoration: none;
+    padding: 0 55px 0 10px;
+    color: white;
+}
+.date{
+    float: right;
+    text-transform: lowercase;
+    border-left: 3px solid #8b2b8d;
+    padding: 0 45px;
+}
+.banner{
+    background-image: url("../img/preview.png");
+    background-size: contain;
+    background-color: white;
+    height: 200px;
+    border: 3px solid #8b2b8d;
+    margin: 40px 10px 20px 10px;
+}
+.banner__text{
+    text-align: center;
+    line-height: 200px;
+    font-size: 70px;
+    color: #8a3b8a;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0 20px 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+form{
+    width: 200px;
+    margin: 0 auto;
+    text-align: left;
+}
+.checkbox-wrapper{
+    margin-top: 10px;
+}
+input[type="checkbox"]:not(:checked),
+input[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+input[type="checkbox"]:not(:checked) + .person:before,
+input[type="checkbox"]:checked + .person:before {
+    content: 'like';
+    margin-right: 15px;
+    padding: 2px 4px;
+    border: 1px solid #8b2b8d;
+    background: #fff;
+    cursor: pointer;
+}
+footer{
+    background-color: #ad73ad;
+    height: 90px;
+    border: 3px solid #8b2b8d;
+    margin: 40px 10px 20px 10px;
+}
+.copyright{
+    text-align: center;
+    line-height: 90px;
+    font-size: 15px;
+    color: white;
+}

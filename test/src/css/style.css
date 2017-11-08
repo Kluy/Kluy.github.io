@@ -216,6 +216,8 @@ footer {
       font-size: 14px; }
       .partner .partner__container .partner__item p {
         width: 200px; }
+  .partner .hidden {
+    display: none; }
   .grid .grid-item img {
     width: auto;
     height: 180px; } }

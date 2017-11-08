@@ -4,8 +4,6 @@
 
 $(function () {
 
-    $('.search_activity').on('click', search);
-
     function search (){
 
         $('.grid-item').remove();
@@ -36,4 +34,30 @@ $(function () {
         search();
 
     });
+
+    $('.search_activity').on('click', search);
+
+    /*HIDE PARTNERS*/
+
+    var opened = false;
+
+    function showMorePartners (e) {
+        e.preventDefault();
+
+        var $partners = $('.hidden');
+
+        if (opened) {
+            opened = false;
+            $partners.slideUp();
+            $('.button--see-partners').html('See other partners');
+
+        } else {
+            opened = true;
+            $partners.slideDown();
+            $('.button--see-partners').html('Hide more partners');
+        }
+    }
+
+    $('.button--see-partners').on("click", showMorePartners);
+
 });
