@@ -1,0 +1,131 @@
+body {
+  text-align: center;
+  font-family: 'Montserrat',  Arial, Tahoma, sans-serif; }
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+  transition: 1s;
+  font-weight: bold;
+  color: white; }
+
+h1 {
+  font-size: 22px;
+  padding: 40px 0 20px 0;
+  font-weight: bold; }
+
+header {
+  padding: 38px 0 234px 0;
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  color: white; }
+
+.wrapper {
+  margin: 0 auto;
+  width: 320px; }
+
+.section-wrapper {
+  margin: 0 auto;
+  width: 320px; }
+
+nav {
+  padding-bottom: 47px; }
+  nav .log-in {
+    padding-right: 20px; }
+  nav .log-in:hover {
+    color: #ff4e50; }
+  nav .sing-up {
+    border-radius: 16px;
+    border: 2px solid white;
+    padding: 5px 19px; }
+  nav .sing-up:hover {
+    background-color: white;
+    color: #ff4e50; }
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.slogan {
+  font-size: 52px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 35px;
+  padding-top: 40px; }
+
+.slogan-2 {
+  font-size: 18px;
+  line-height: 22px;
+  padding-top: 34px;
+  margin-bottom: 30px; }
+
+.find-partner-button {
+  padding: 10px 51px;
+  border-radius: 19px;
+  background-color: #ff4e50; }
+
+.find-partner-button:hover {
+  color: #ff4e50;
+  background-color: white; }
+
+.slider__item {
+  margin: 5px;
+  padding: 76px 20px 20px 20px;
+  border-radius: 3px;
+  text-align: left;
+  width: 260px; }
+  .slider__item a {
+    font-size: 10px;
+    text-transform: uppercase;
+    background-color: #ff4e50;
+    padding: 7px 18px 6px 17px;
+    border-radius: 12px; }
+  .slider__item h4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    line-height: 30px;
+    margin: 20px 0; }
+  .slider__item p {
+    font-size: 14px;
+    color: #cccccc;
+    line-height: 17px; }
+
+.slider__item--image-1 {
+  background-image: url(../img/step_1.jpg); }
+
+.slider__item--image-2 {
+  background-image: url(../img/step_2.jpg); }
+
+.slider__item--image-3 {
+  background-image: url(../img/step_3.jpg); }
+
+.partners {
+  width: 220px;
+  margin: 0 15px; }
+
+.partners__img {
+  /*border: 1px solid black;*/
+  border-radius: 100%; }
+
+/*--MEDIA QUERIES--*/
+@media (max-width: 1440px) {
+  .slogan {
+    font-size: 52px; } }
+
+@media (max-width: 768px) {
+  .slogan {
+    font-size: 52px; } }
+
+@media (max-width: 320px) {
+  header {
+    padding: 38px 0 234px 0; }
+  .slogan {
+    font-size: 30px; }
+  .slogan-2 {
+    font-size: 18px; }
+  .partners {
+    padding-left: 20px; } }
