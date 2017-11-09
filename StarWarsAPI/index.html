@@ -5,14 +5,17 @@
     <title>SWAPI Demo</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
 </head>
 <body>
-<div class="wrapper">
-    <header class="header">
+<div class="wrapper wow ">
+    <header class="header wow flipInX">
         <div class="logo-wrapper clearfix">
-            <p class="logo"></p>
-            <p class="headline">Star Wars Personages Like List</p>
+            <p class="logo">Logo</p>
+            <p class="headline">Star Wars Personages List</p>
         </div>
         <nav class="clearfix">
             <a href="#">Homepage</a>
@@ -21,28 +24,24 @@
             <a href="#" class="date">date of issue</a>
         </nav>
     </header>
-    <div class="banner">
-        <!--<p class="banner__text">-->
-            <!--Promo Banner-->
-        <!--</p>-->
+    <div class="banner wow flipInX">
+        <p class="banner__text">Promo banner</p>
     </div>
     <h1>Star Wars Personages List</h1>
-    <form action="">
-        <div class="person">www</div>
-
+    <form action="#" class="wow flipInX">
         <script type="text/tmpl" id="arr">
-                <div class="person">www</div>
+              <div></div>
               <% for (i = 0; i < profileData.length; i++) { %>
               <p class="checkbox-wrapper">
-                <input type="checkbox" name="person" id="person <%= + [i] %>">
-                <label class="person" for="all"><%= profileData[i] %></label>
+                <input type="checkbox" name="person" id="person<%= + [i] %>">
+                <label class="label person" for="person<%= + [i] %>"><%= profileData[i] %></label>
               </p>
               <% } %>
         </script>
     </form>
-    <footer>
+    <footer class="wow flipInX">
         <p class="copyright">
-            &copy;
+            Footer with copyright &copy;
         </p>
     </footer>
 </div>

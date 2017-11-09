@@ -1,12 +1,4 @@
-.q{
-    border: 1px solid red;
-}
-.a{
-    float: left;
-
-}
 body {
-    font-family: Arial, Tahoma, sans-serif;
     background-color: #e4d1e4;
 }
 .clearfix:after{
@@ -15,25 +7,25 @@ body {
     clear: both;
 }
 .wrapper{
+    font-family: Arial, Tahoma, sans-serif;
     background-color: #dec6de;
     width: 800px;
     margin: 40px auto;
     color: #8c3e8a;
+    padding: 10px;
 }
 .logo-wrapper{
-    padding: 15px 25px 10px 15px;
+    padding: 15px 20px 10px 15px;
     font-weight: bold;
-
 }
 .logo{
     float: left;
-    width: 200px;
-    height: 80px;
+    display: flex;
+    align-items: flex-end;
     font-size: 35px;
+    height: 80px;
     font-style: italic;
-    background-size: contain;
-    background-image: url("../img/star_wars_logo.png");
-
+    text-transform: uppercase;
 }
 .headline{
     display: flex;
@@ -48,7 +40,6 @@ nav {
     background-color: #ad73ad;
     font-size: 15px;
     text-transform: uppercase;
-    margin: 0 12px;
 }
 a {
     text-decoration: none;
@@ -62,12 +53,10 @@ a {
     padding: 0 45px;
 }
 .banner{
-    background-image: url("../img/preview.png");
-    background-size: contain;
     background-color: white;
     height: 200px;
     border: 3px solid #8b2b8d;
-    margin: 40px 10px 20px 10px;
+    margin: 40px 0 20px 0;
 }
 .banner__text{
     text-align: center;
@@ -92,25 +81,37 @@ form{
 .checkbox-wrapper{
     margin-top: 10px;
 }
-input[type="checkbox"]:not(:checked),
-input[type="checkbox"]:checked {
-    position: absolute;
-    left: -9999px;
-}
-input[type="checkbox"]:not(:checked) + .person:before,
-input[type="checkbox"]:checked + .person:before {
-    content: 'like';
-    margin-right: 15px;
-    padding: 2px 4px;
-    border: 1px solid #8b2b8d;
-    background: #fff;
-    cursor: pointer;
-}
+/*input[type="checkbox"]:not(:checked),*/
+/*input[type="checkbox"]:checked {*/
+    /*position: absolute;*/
+    /*left: -9999px;*/
+/*}*/
+/*.like{*/
+    /*content: 'like';*/
+    /*margin-right: 12px;*/
+    /*padding: 2px 4px;*/
+    /*border: 1px solid #8b2b8d;*/
+    /*background: #fff;*/
+    /*display: inline-block;*/
+/*}*/
+/*.person:before, .person2:before{*/
+    /*content: 'like';*/
+    /*margin-right: 15px;*/
+    /*padding: 2px 4px;*/
+    /*border: 1px solid #8b2b8d;*/
+    /*background: #fff;*/
+/*}*/
+/*.person2:before{*/
+    /*background: green;*/
+/*}*/
+/*.active{*/
+    /*background-color: green;*/
+/*}*/
 footer{
     background-color: #ad73ad;
     height: 90px;
     border: 3px solid #8b2b8d;
-    margin: 40px 10px 20px 10px;
+    margin-top: 40px;
 }
 .copyright{
     text-align: center;

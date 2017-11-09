@@ -2,9 +2,9 @@
  * Created by TERM2 on 01.11.2017.
  */
 //
+
 $(function () {
-    for (j = 1; j <= 2; j++){
-        var arr = swapiModule.getPeople([j], function array (data) {
+        var arr = swapiModule.getPeople(function array (data) {
             var i = 0;
             arr = [];
             while (i < data.results.length){
@@ -18,21 +18,21 @@ $(function () {
             });
             $('form').append(content);
 
-        });
-        }
-});
+            for (i = 0; i <= arr.length - 1; i++){
+                var a = document.getElementById('person' + [i]);
 
-$(function () {
-    // $('form')
-    //     .on('click',function () {
-    //         alert('ddd')
-    //     });
-    $('.person')
-        .on('click',function () {
-            alert('ddd')
-        });
-    $('.header')
-        .on('click',function () {
-            alert('ddd')
+                console.log(a);
+
+                a.onclick = function() {
+                if(a.checked) {
+                    localStorage.setItem(a, "true");
+                } else {
+                    localStorage.setItem(a, "false");
+                }
+            };
+            if (localStorage.getItem(a) == "true") {
+                a.setAttribute('checked','checked');
+            }
+            }
         });
 });
