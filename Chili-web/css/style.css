@@ -138,13 +138,14 @@ header{
     color: white;
 }
 .top-sales__block{
-    width: 194px;
+    width: 193px;
     background-color: #ebebeb;
     padding: 15px;
+    margin-left: 1px;
     margin-bottom: 204px;
     height: 295px;
 }
-.yellow_text{
+.yellow{
     color: #fffc00;
 }
 
@@ -187,4 +188,3 @@ li a:hover{
     top: -207px;
     left: 600px;
 }
-
