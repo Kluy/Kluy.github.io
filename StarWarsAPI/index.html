@@ -31,10 +31,12 @@
     <form action="#" class="wow flipInX">
         <script type="text/tmpl" id="arr">
               <div></div>
-              <% for (i = 0; i < profileData.length; i++) { %>
+              <% for (i = 0; i < personList.length; i++) { %>
               <p class="checkbox-wrapper">
-                <input type="checkbox" name="person" id="person<%= + [i] %>">
-                <label class="label person" for="person<%= + [i] %>"><%= profileData[i] %></label>
+                <label class="person">
+                    <input type="checkbox" class=".checkbox" name="person" id="person<%= + [i] %>">
+                    <%= personList[i] %>
+                </label>
               </p>
               <% } %>
         </script>

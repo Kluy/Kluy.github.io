@@ -82,32 +82,32 @@ form{
 .checkbox-wrapper{
     margin-top: 10px;
 }
-/*input[type="checkbox"]:not(:checked),*/
-/*input[type="checkbox"]:checked {*/
+input[type="checkbox"]:not(:checked),
+input[type="checkbox"]:checked {
     /*position: absolute;*/
-    /*left: -9999px;*/
-/*}*/
-/*.like{*/
-    /*content: 'like';*/
-    /*margin-right: 12px;*/
-    /*padding: 2px 4px;*/
-    /*border: 1px solid #8b2b8d;*/
-    /*background: #fff;*/
-    /*display: inline-block;*/
-/*}*/
-/*.person:before, .person2:before{*/
-    /*content: 'like';*/
-    /*margin-right: 15px;*/
-    /*padding: 2px 4px;*/
-    /*border: 1px solid #8b2b8d;*/
-    /*background: #fff;*/
-/*}*/
-/*.person2:before{*/
-    /*background: green;*/
-/*}*/
-/*.active{*/
-    /*background-color: green;*/
-/*}*/
+    left: -90px;
+}
+.like{
+    content: 'like';
+    margin-right: 12px;
+    padding: 2px 4px;
+    border: 1px solid #8b2b8d;
+    background: #fff;
+    display: inline-block;
+}
+.person:before, .person2:before{
+    content: 'like';
+    margin-right: 15px;
+    padding: 2px 4px;
+    border: 1px solid #8b2b8d;
+    background: #fff;
+}
+.person2:before{
+    background: green;
+}
+.active{
+    background-color: green;
+}
 footer{
     background-color: #ad73ad;
     height: 90px;
