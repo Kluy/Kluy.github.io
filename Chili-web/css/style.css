@@ -1,11 +1,7 @@
 body{
     background-image: url("../img/background.png");
     font-family: "Myriad Pro", Arial, Tahoma, sans-serif;
-    /*position:fixed;*/
-    /*width: 100%;*/
-    /*position: static;*/
     overflow-x: hidden;
-
 }
 .clearfix:after{
     clear: both;
@@ -48,8 +44,6 @@ header{
 }
 .bold{
     font-weight: bold;
-}
-.uppercase{
 }
 .header__right-box{
     width: 600%;
