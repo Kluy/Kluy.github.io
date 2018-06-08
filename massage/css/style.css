@@ -4140,9 +4140,9 @@ ul.project-detail-block, .project-detail-block ul {
     position: static;
 }
 
-.owl-carousel.white .owl-controls .owl-page span {
-    background: none repeat scroll 0 0 #fff;
-}
+/*.owl-carousel.white .owl-controls .owl-page span {*/
+    /*background: none repeat scroll 0 0 #fff;*/
+/*}*/
 
 .owl-carousel.white .owl-controls .owl-page.active span {
     background: rgba(0, 0, 0, 0);
