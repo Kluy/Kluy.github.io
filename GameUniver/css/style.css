@@ -1,0 +1,256 @@
+#path1 {
+    fill: none;
+    stroke: black;
+}
+.wrapper{
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    height: 630px;
+    width: 980px;
+}
+.pop_up_background{
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    visibility: hidden;
+    transition: opacity 2s, visibility 2s;
+    opacity: 0;
+    height: 630px;
+    width: 980px;
+}
+.map{
+    width: 980px;
+    height: 605px;
+    background-image: url("../img/map.png");
+    background-repeat: no-repeat;
+    z-index: 500;
+}
+#person{
+    position: absolute;
+    left:77px;
+    top:-10px;
+    offset-path: path("m 367.93416,481.75434 c 0,0 -17.16094,-5.77213 -24.79202,-12.0961 -7.63108,-6.32397 -12.68733,-21.38229 -19.05668,-25.55724 -14.03282,-8.12671 -27.64562,-2.99964 -43.62844,5.29599 -5.31144,2.01091 -26.38017,14.72607 -26.38017,14.72607 -27.63309,17.59014 -58.74828,36.4475 -89.62827,45.34095 -20.05315,4.17087 -41.84327,6.47855 -60.24838,4.20266 -10.73249,-1.38845 -15.798925,-3.15443 -26.089688,-6.86676 -10.290762,-3.71233 -54.6279,-24.46951 -64.099715,-33.70605 -7.8608959,-7.25351 -8.6111608,-9.4683 -6.9668843,-17.63758 2.3009977,-5.6688 6.4199743,-9.00785 9.6430843,-11.90515 10.480677,-9.42125 21.966452,-8.41773 30.73384,-22.11063 l -0.997707,-7.22187 -11.14737,-12.98625 0.767909,-7.68321 4.722352,-4.48143 3.148473,-7.92196 6.676358,-6.55192 101.608968,-53.4378 5.81201,-4.29397 3.30827,-4.6763 1.46682,-5.43356 -0.48528,-5.73938 -2.82758,-4.60574 -5.54915,-4.94897 -100.912883,-60.92576 -7.371335,-8.36567 3.390893,-10.00197 32.791994,-14.22426 3.264321,-2.54602 1.109178,-3.86621 -1.246124,-4.44701 -7.621013,-12.41753 -1.267584,-5.98264 1.582074,-4.70869 c 0,0 0.476615,-2.37112 1.81135,-3.94862 1.626655,-1.92252 4.261485,-3.18169 4.728513,-3.49453 0.467028,-0.31284 4.654432,-2.85855 9.080986,-2.96073 4.426554,-0.10217 5.843408,-0.0877 5.843408,-0.0877 l 5.204632,1.57202 5.02477,2.936 3.11121,3.50564 13.85772,14.80229 35.52928,36.61811 13.9517,7.61178 c 0,0 12.08541,0.73547 13.24138,0.0618 1.15596,-0.67368 24.61767,-10.32305 24.61767,-10.32305 l 8.83474,-15.71454 -3.42818,-26.01219 -13.93977,-23.58772 0.0727,-6.80244 2.68803,-3.89597 13.29746,-2.01154 20.84817,3.93688 18.72142,-2.73692 4.95748,-4.51731 0.0566,-13.62378 11.51835,-7.90399 8.82492,-6.67616 11.57213,-18.192012 1.74357,-13.562728 -1.46916,-16.9818 -1.31276,-8.889007 0.85439,-6.083211 3.89358,-10.896693 8.32513,-8.260597 13.07016,-5.030875 18.24799,2.030975 35.60909,29.718515 9.74925,2.60981 33.25848,-4.21973 8.76192,2.5275 2.74933,6.230822 -3.86277,6.044349 -17.9826,8.027619 -5.7743,2.891379 -2.54344,3.835076 -0.33255,5.512435 -1.75007,21.92313 -13.69884,26.661853 -1.07183,10.55384 3.45518,9.12204 19.57632,10.63881 10.83719,8.7837 2.40557,9.08564 -1.55103,9.46443 -4.62535,9.79176 -6.80563,8.37061 -6.6682,6.46623 -2.90488,7.94379 -4.98672,42.58095 -11.08516,18.4802 -103.97915,65.97308 -4.82274,3.54423 -4.10405,5.32853 -1.34845,4.78828 0.56032,7.31041 5.25406,5.50821 17.33315,11.13242 12.39109,7.22405 28.53424,15.14927 12.25805,1.60503 16.18641,-1.5237 15.76774,1.0161 10.10469,4.39037 127.39139,72.85576 16.15126,3.43493 7.09549,-0.88708 5.26507,-1.67959 3.98117,-2.97972 2.23782,-3.9079 1.77358,-6.7162 3.42756,-6.40521 6.19421,-4.57248 8.56176,-2.94507 10.32661,0.28725 c 7.22825,2.92105 9.53006,5.93703 13.84848,12.00055 0,0 17.54017,21.80973 18.55735,22.42051 1.01718,0.61079 11.87081,9.22719 11.87081,9.22719 l 7.59657,1.50245 5.86448,-0.32829 5.99806,-1.28859 6.65126,-2.81838 103.06196,-59.40369 22.69365,-19.10345 75.59411,-41.70102 27.18732,-18.2791 8.45218,-10.63439 5.81551,-19.34516 -0.15626,-13.90975 -1.57665,-10.79716 -10.19003,-17.73925 -11.12219,-16.59671 -4.40686,-3.68607 -6.61001,-3.90948 -6.83055,-1.37619 -7.47298,-0.86308 c 0,0 -3.95399,0.40372 -9.27182,2.07362 -5.31783,1.66989 -22.23835,12.96307 -25.87638,15.65745 -3.63803,2.69438 -118.74894,71.16157 -118.74894,71.16157 l -12.19932,1.00433 -11.22604,-4.18645 -45.94658,-37.44188 -2.33819,-4.72144 -0.39418,-4.99205 1.55259,-4.54277 3.02056,-2.76026 3.99902,-2.56059 90.93631,-51.37483 11.90549,-8.75721 7.81078,-9.64862 6.28123,-17.99046 c 0,0 0.4405,-6.20569 0.0855,-9.12778 -0.355,-2.92208 -2.12074,-8.2655 -2.12074,-8.2655 0,0 -2.71272,-4.76479 -7.21795,-10.05449 -4.29209,-5.03945 -10.26302,-10.55138 -15.02079,-13.02895 -4.74448,-2.47065 -11.7013,-4.61491 -18.51314,-5.52415 -7.18921,-0.95961 -14.11509,-0.6147 -14.11509,-0.6147 l -11.13533,2.95841 -12.25117,5.63731 -32.81146,16.77246 -62.41222,33.05546 -8.57458,5.48857 -4.95694,4.26126 -2.58911,4.61783 -8.05048,30.77782 -8.16893,9.54712 -14.48839,9.76745 -18.99869,4.04519 -20.60228,1.38844 -15.18408,-1.98165 -27.10838,-23.14514 -7.76002,-17.54071 -2.8571,-21.39782 3.32555,-16.25806 5.94445,-13.13211 c 14.33322,-17.28891 22.21451,-29.71804 39.20371,-44.47912 l 19.80904,-14.42084 37.03593,-19.50608 12.01401,-4.60593 11.63316,-6.143536 3.55298,-7.129165 -2.74827,-6.418875 -9.91477,-5.277311 -7.25469,-8.260388 -1.95567,-11.637601 2.45158,-17.591636 6.079,-13.662602 7.92302,-10.690487 11.07945,-7.904119 13.65079,-5.0310528 11.26157,-0.62631 12.78367,3.53253 10.66654,8.2820398 8.32304,13.296866 0.47955,12.074199 -1.80591,10.793375 -5.94935,8.712928 -12.54059,8.473376 -6.24843,5.187102 -4.76633,4.733528 -4.10907,5.63603 -2.83611,10.98605 0.64842,9.389509 1.77823,4.40977 3.86636,3.83844 9.72497,1.80889 6.09852,-0.55347 5.16681,-2.22829 5.60334,-6.60479 3.88774,-6.38987 3.73503,-7.234104 3.45068,-5.52638 5.81492,-7.631784 4.94234,-5.762045 6.49097,-4.175365 17.61957,-6.759635 11.5044,-1.09393 18.737,1.70822 16.3502,5.50097 20.40253,11.388441 7.01702,8.828079 0.42413,5.532914 -4.29441,10.705519 0.4715,4.41936 3.73263,3.51566 13.34586,3.41175 6.95038,-1.43339 3.98478,-4.44229 12.70381,-18.065835 5.36881,-5.247969 7.12258,-2.898035 11.14358,-1.137404 13.5219,0.328464 6.4583,3.12278 2.58269,3.575565 c 0.89985,3.760765 -0.64827,6.026399 -2.27101,9.342314 l -5.06383,3.4871 -20.21876,10.5858 -3.20937,5.35105 1.14699,6.21996 4.18269,3.67593 7.4666,5.06503 1.74662,5.59381 2.18667,5.98842 1.6637,1.80721");
+    transition: offset-distance 2s;
+    offset-distance: 0;
+    offset-rotate: 0deg;
+}
+.friends{
+    background-image: url("../img/friends.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    overflow: hidden;
+    width: 536px;
+    height: 63px;
+    top: 549px;
+    left: 4px;
+}
+#arrow_left {
+    background-image: url("../img/arrow_left.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 16px;
+    height: 29px;
+    top: 18px;
+    left: 9px;
+    z-index: 4;
+}
+#arrow_right {
+    background-image: url("../img/arrow_right.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 16px;
+    height: 29px;
+    top: 18px;
+    left: 511px;
+    z-index: 4;
+}
+.friends_list_hider{
+    overflow: hidden;
+    position: absolute;
+    left: 26px;
+    top: 6px;
+    width: 476px;
+    height: 51px;
+}
+.friends_list{
+    position: absolute;
+    transition: left 1s;
+    width: 5000px;
+    top: 0;
+    left: 0;
+}
+.friends_icon{
+    background-image: url("../img/friends_icon.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 6px;
+    width: 50px;
+    height: 51px;
+}
+.chat{
+    background-image: url("../img/chat.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 67px;
+    height: 62px;
+    top: 552px;
+    left: 543px;
+}
+.chat:hover{
+    background-image: url("../img/chat_light.png");
+    transition: 500ms;
+}
+.univer{
+    background-image: url("../img/univer.png");
+    background-repeat: no-repeat;
+    width: 206px;
+    height: 67px;
+    position: absolute;
+    top: 548px;
+    left: 615px;
+}
+.mail{
+    background-image: url("../img/mail.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 68px;
+    height: 64px;
+    top: 550px;
+    left: 826px;
+}
+.rating_button{
+    background-image: url("../img/rating_button.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 66px;
+    height: 61px;
+    top: 551px;
+    left: 897px;
+}
+.ratings{
+    background-image: url("../img/ratings_background.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 523px;
+    height: 455px;
+    top: -482px;
+    left: 240px;
+    z-index: 20;
+    transition: top 1.5s;
+}
+.x_button{
+    background-image: url("../img/x_button.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 14px;
+    left: 480px;
+}
+.ratings_header{
+    background-image: url("../img/ratings_header.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    padding-top: 2px;
+    top: -11px;
+    left: 126px;
+    width: 264px;
+    height: 33px;
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    text-shadow: 1px 1px 1px black;
+}
+.table_header{
+    background-image: url("../img/table_header.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-bottom: 6px;
+    font-weight: 600;
+    width: 403px;
+    height: 29px;
+    top: 126px;
+    left: 60px;
+}
+.ratings_table{
+    background: #8c5a31;
+    width: 432px;
+    height: 291px;
+    border-radius: 17px;
+    margin: 95px 0 0 29px;
+    padding: 31px 0 0 31px;
+}
+.text{
+    position: absolute;
+    color: white;
+    font-size: 13px;
+    padding-top: 9px;
+    padding-left: 15px;
+    font-family: Arial, sans-serif;
+}
+.rating{
+    position: absolute;
+}
+.fio{
+    position: absolute;
+    width: 226px;
+    left: 98px;
+}
+.exp{
+    position: absolute;
+    left: 327px;
+}
+.owner{
+    background-image: url("../img/owner.png");
+    background-repeat: no-repeat;
+    width: 403px;
+    height: 27px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    font-family: Arial, sans-serif;
+}
+.id{
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 6px;
+    width: 60px;
+    left: 4px;
+}
+.image{
+    background-image: url("../img/ava_small.png");
+    position: absolute;
+    margin-top: -1px;
+    width: 30px;
+    height: 29px;
+    left: 66px;
+}
+.name{
+    position: absolute;
+    overflow: hidden;
+    margin-top: 6px;
+    width: 200px;
+    left: 100px;
+}
+.points{
+    text-align: center;
+    position: absolute;
+    overflow: hidden;
+    margin-top: 6px;
+    width: 90px;
+    left: 299px;
+}
+.overflow_hidden{
+    position: absolute;
+    overflow: hidden;
+    height: 225px;
+    width: 403px;
+    top: 162px;
+    left: 60px;
+}
